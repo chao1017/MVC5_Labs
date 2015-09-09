@@ -50,6 +50,6 @@ D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.OA
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.Google.xml
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.Twitter.xml
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.dll
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.pdb
+D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
