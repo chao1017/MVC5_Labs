@@ -52,4 +52,3 @@ D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.Tw
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.dll
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.pdb
-D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
