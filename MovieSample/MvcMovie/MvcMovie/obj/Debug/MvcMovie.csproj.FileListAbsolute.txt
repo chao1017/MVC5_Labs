@@ -56,3 +56,4 @@ D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.Cache
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Rating.resources
+D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.DataAnnotations.resources
