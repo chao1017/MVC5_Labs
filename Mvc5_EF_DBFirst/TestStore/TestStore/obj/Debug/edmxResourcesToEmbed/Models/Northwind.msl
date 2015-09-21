@@ -22,6 +22,7 @@
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="NORTHWNDModel.Customers">
         <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
           <ScalarProperty Name="ContactName" ColumnName="ContactName" />

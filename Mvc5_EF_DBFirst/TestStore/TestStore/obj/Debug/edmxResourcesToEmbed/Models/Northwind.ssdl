@@ -39,6 +39,7 @@
     <Property Name="Country" Type="nvarchar" MaxLength="15" />
     <Property Name="Phone" Type="nvarchar" MaxLength="24" />
     <Property Name="Fax" Type="nvarchar" MaxLength="24" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Employees">
     <Key>
