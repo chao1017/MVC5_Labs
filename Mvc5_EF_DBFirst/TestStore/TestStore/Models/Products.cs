@@ -11,6 +11,7 @@ namespace TestStore.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Products
     {
@@ -25,6 +26,7 @@ namespace TestStore.Models
         public Nullable<int> SupplierID { get; set; }
         public Nullable<int> CategoryID { get; set; }
         public string QuantityPerUnit { get; set; }
+        [Range(1, 100)]
         public Nullable<decimal> UnitPrice { get; set; }
         public Nullable<short> UnitsInStock { get; set; }
         public Nullable<short> UnitsOnOrder { get; set; }

@@ -11,6 +11,7 @@ namespace TestStore.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Customers
     {
@@ -22,7 +23,9 @@ namespace TestStore.Models
         }
     
         public string CustomerID { get; set; }
+        [StringLength(25)]
         public string CompanyName { get; set; }
+        [StringLength(30)]
         public string ContactName { get; set; }
         public string ContactTitle { get; set; }
         public string Address { get; set; }
@@ -32,6 +35,7 @@ namespace TestStore.Models
         public string Country { get; set; }
         public string Phone { get; set; }
         public string Fax { get; set; }
+        [StringLength(20)]
         public string MiddleName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
