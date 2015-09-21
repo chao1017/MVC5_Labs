@@ -99,6 +99,35 @@
         </dd>
 
     </dl>
+    <table class="table">
+        <tr>
+            <th>
+                Ship Name
+            </th>
+            <th>
+                Ship Country
+            </th>
+            <th>
+                Shippers
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipCountry)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Shippers)
+                </td>
+            </tr>
+        }
+    </table>
+
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
