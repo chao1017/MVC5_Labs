@@ -1,28 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Routing;
 using Mvc_Repository.Models;
 using Mvc_Repository.Models.Interface;
+using Mvc_Repository.Models.Repository;
 
 namespace Mvc_Repository.Controllers
 {
     public class CategoryController : Controller
     {
-        private ICategoryRepository categoryRepository;
+        private IRepository<Categories> categoryRepository;
 
         public CategoryController()
         {
-            this.categoryRepository = new CategoryRepository();
+            this.categoryRepository = new GenericRepository<Categories>();
         }
 
 
         public ActionResult Index()
         {
-            var categories = this.categoryRepository.GetAll().ToList();
+            var categories = this.categoryRepository.GetAll()
+                .OrderByDescending(x => x.CategoryID)
+                .ToList();
+
             return View(categories);
         }
 
@@ -36,7 +36,7 @@ namespace Mvc_Repository.Controllers
             }
             else
             {
-                var category = this.categoryRepository.Get(id.Value);
+                var category = this.categoryRepository.Get(x => x.CategoryID == id.Value);
                 return View(category);
 
             }
@@ -73,7 +73,7 @@ namespace Mvc_Repository.Controllers
             }
             else
             {
-                var category = this.categoryRepository.Get(id.Value);
+                var category = this.categoryRepository.Get(x => x.CategoryID == id.Value);
                 return View(category);
             }
         }
@@ -102,7 +102,7 @@ namespace Mvc_Repository.Controllers
             }
             else
             {
-                var category = this.categoryRepository.Get(id.Value);
+                var category = this.categoryRepository.Get(x => x.CategoryID == id.Value);
                 return View(category);
             }
         }
@@ -112,7 +112,7 @@ namespace Mvc_Repository.Controllers
         {
             try
             {
-                var category = this.categoryRepository.Get(id);
+                var category = this.categoryRepository.Get(x => x.CategoryID == id);
                 this.categoryRepository.Delete(category);
             }
             catch (DataException)

@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Mvc_Repository.Models;
 using Mvc_Repository.Models.Interface;
+using Mvc_Repository.Models.Repository;
 
 namespace Mvc_Repository.Controllers
 {
     public class ProductController : Controller
     {
-        private IProductRepository productRepository;
-        private ICategoryRepository categoryRepository;
+        private IRepository<Products> productRepository;
+        private IRepository<Categories> categoryRepository;
 
         public IEnumerable<Categories> Categories
         {
@@ -25,13 +22,16 @@ namespace Mvc_Repository.Controllers
 
         public ProductController()
         {
-            this.productRepository = new ProductRepository();
-            this.categoryRepository = new CategoryRepository();
+            this.productRepository = new GenericRepository<Products>();
+            this.categoryRepository = new GenericRepository<Categories>();
         }
 
         public ActionResult Index()
         {
-            var products = productRepository.GetAll().ToList();
+            var products = productRepository.GetAll()
+                .OrderByDescending(x => x.ProductID)
+                .ToList();
+
             return View(products);
         }
 
@@ -39,7 +39,7 @@ namespace Mvc_Repository.Controllers
 
         public ActionResult Details(int id = 0)
         {
-            Products product = productRepository.Get(id);
+            Products product = productRepository.Get(x => x.ProductID == id);
             if (product == null)
             {
                 return HttpNotFound();
@@ -72,7 +72,7 @@ namespace Mvc_Repository.Controllers
 
         public ActionResult Edit(int id = 0)
         {
-            Products product = this.productRepository.Get(id);
+            Products product = this.productRepository.Get(x => x.ProductID == id);
             if (product == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace Mvc_Repository.Controllers
 
         public ActionResult Delete(int id = 0)
         {
-            Products product = this.productRepository.Get(id);
+            Products product = this.productRepository.Get(x => x.ProductID == id);
             if (product == null)
             {
                 return HttpNotFound();
@@ -108,7 +108,7 @@ namespace Mvc_Repository.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            Products product = this.productRepository.Get(id);
+            Products product = this.productRepository.Get(x => x.ProductID == id);
             this.productRepository.Delete(product);
             return RedirectToAction("Index");
         }
