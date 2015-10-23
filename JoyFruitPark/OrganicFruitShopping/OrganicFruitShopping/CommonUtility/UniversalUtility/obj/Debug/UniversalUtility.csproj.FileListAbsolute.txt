@@ -1,0 +1,5 @@
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\UniversalUtility.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\UniversalUtility.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\obj\Debug\UniversalUtility.csprojResolveAssemblyReference.cache
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\obj\Debug\UniversalUtility.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\obj\Debug\UniversalUtility.pdb

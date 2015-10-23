@@ -1,0 +1,4 @@
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\DataAccessLayer\ShoppingData\bin\Debug\ShoppingData.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\DataAccessLayer\ShoppingData\bin\Debug\ShoppingData.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\DataAccessLayer\ShoppingData\obj\Debug\ShoppingData.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\DataAccessLayer\ShoppingData\obj\Debug\ShoppingData.pdb

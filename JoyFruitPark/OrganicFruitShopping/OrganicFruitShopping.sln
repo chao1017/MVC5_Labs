@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonUtility", "CommonUtility", "{EC614043-5C5B-4E66-A8D2-C2A6B8C995A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalUtility", "OrganicFruitShopping\CommonUtility\UniversalUtility\UniversalUtility.csproj", "{655D5DFD-1654-4639-9996-1D990F7CF4E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{88BADB8E-B543-4F45-9952-493011315170}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceLayer", "ServiceLayer", "{42EE3EC9-C43C-4020-AA7C-57FA5AFA5A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoopingService", "OrganicFruitShopping\ServiceLayer\ShoopingService\ShoopingService.csproj", "{72639898-5149-43AA-B5B3-D0421725D890}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogicLayer", "BusinessLogicLayer", "{AA242AA4-E91C-42D6-AFE5-DC13DBCF8564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingBusiness", "OrganicFruitShopping\BusinessLogicLayer\ShoppingBusiness\ShoppingBusiness.csproj", "{CA568119-42D7-43C5-8E00-80D1BDCF20D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{BEAC9E30-9388-41EC-BF35-02E74D01D344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingData", "OrganicFruitShopping\DataAccessLayer\ShoppingData\ShoppingData.csproj", "{77737E5F-0DA9-4370-8B39-87261AB93364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{655D5DFD-1654-4639-9996-1D990F7CF4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655D5DFD-1654-4639-9996-1D990F7CF4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655D5DFD-1654-4639-9996-1D990F7CF4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655D5DFD-1654-4639-9996-1D990F7CF4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72639898-5149-43AA-B5B3-D0421725D890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72639898-5149-43AA-B5B3-D0421725D890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72639898-5149-43AA-B5B3-D0421725D890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72639898-5149-43AA-B5B3-D0421725D890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA568119-42D7-43C5-8E00-80D1BDCF20D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA568119-42D7-43C5-8E00-80D1BDCF20D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA568119-42D7-43C5-8E00-80D1BDCF20D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA568119-42D7-43C5-8E00-80D1BDCF20D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77737E5F-0DA9-4370-8B39-87261AB93364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77737E5F-0DA9-4370-8B39-87261AB93364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77737E5F-0DA9-4370-8B39-87261AB93364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77737E5F-0DA9-4370-8B39-87261AB93364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{655D5DFD-1654-4639-9996-1D990F7CF4E0} = {EC614043-5C5B-4E66-A8D2-C2A6B8C995A6}
+		{72639898-5149-43AA-B5B3-D0421725D890} = {42EE3EC9-C43C-4020-AA7C-57FA5AFA5A69}
+		{CA568119-42D7-43C5-8E00-80D1BDCF20D1} = {AA242AA4-E91C-42D6-AFE5-DC13DBCF8564}
+		{77737E5F-0DA9-4370-8B39-87261AB93364} = {BEAC9E30-9388-41EC-BF35-02E74D01D344}
+	EndGlobalSection
+EndGlobal
