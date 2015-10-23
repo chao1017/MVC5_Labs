@@ -1,0 +1,72 @@
+/*toolTip */
+.k-widget.k-tooltip {
+    border-color: rgb(197, 197, 197);
+    background-color: red;
+    color: white;
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*textbox*/
+.k-invalid,
+.k-textbox.k-invalid {
+    /*border: 1px solid #ee0101 !important;*/
+}
+
+.k-widget.k-tooltip.k-tooltip-validation.k-invalid-msg {
+    display: none !important;
+}
+
+.k-widget.k-tooltip.k-tooltip-validation.k-invalid-msg.errorTipShow {
+   /*display: block !important;
+  position: inherit !important;*/
+     display: inherit !important;
+  position: absolute !important;
+}
+
+.k-tooltip-validation .k-callout-s {
+    border-top-color: #005c83 !important;
+}
+
+/*kendo ui紅框*/
+.UIBorderRed {
+    border: 1px solid #ee0101 !important;
+}
+
+/*預設errorTip 隱藏視窗*/
+.errorTip {
+    display: none !important;
+}
+/*顯示errorTip*/
+.errorTipShow {
+    display: block !important;
+    position: absolute !important;
+}
+
+div>.k-grid-content .errorTipShow {
+   /*position: static !important;
+   display: inline !important;*/
+      /*display: block !important;
+  position: inherit !important;*/
+   display: inherit !important;
+  position: absolute !important;
+  margin-top:-40px !important;
+  margin-left:1px !important;
+}
+
+.k-callout-s{
+    left: 20%;
+  bottom: -13px;
+}
+
+/*.k-grid-content {
+    position: static;
+    width: 100%;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: scroll;
+    zoom: 1;
+}*/

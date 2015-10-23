@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 我的 ASP.NET 應用程式</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/kendo/common/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
 
     <script type="text/javascript">
         var appInsights=window.appInsights||function(config){
@@ -50,6 +52,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/kendo/all/js")
+    @Scripts.Render("~/bundles/kendo/mvc/js")
     @RenderSection("scripts", required: false)
 </body>
 </html>

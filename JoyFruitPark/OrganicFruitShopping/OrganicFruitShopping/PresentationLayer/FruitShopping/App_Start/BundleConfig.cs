@@ -26,6 +26,42 @@ namespace FruitShopping
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.UseCdn = true;
+
+            const string kendoVersion = "2015.2.805";
+
+            const string kendoCommonCssPath =
+                "http://cdn.kendostatic.com/" + kendoVersion +
+                "/styles/kendo.common.min.css";
+
+            const string kendoBootstrapCssPath =
+                "http://cdn.kendostatic.com/" + kendoVersion +
+                "/styles/kendo.bootstrap.min.css";
+
+            const string kendoAllJsPath =
+                "http://cdn.kendostatic.com/" + kendoVersion +
+                "/js/kendo.all.min.js";
+
+            const string kendoMvcJsPath =
+                            "http://cdn.kendostatic.com/" + kendoVersion +
+                            "/js/kendo.aspnetmvc.min.js";
+
+            bundles.Add(new
+                ScriptBundle("~/bundles/kendo/all/js", kendoAllJsPath)
+                .Include("~/Scripts/kendo/kendo.all.js"));
+
+            bundles.Add(new
+                ScriptBundle("~/bundles/kendo/mvc/js", kendoMvcJsPath)
+                .Include("~/Scripts/kendo/kendo.aspnetmvc.js"));
+
+            bundles.Add(new
+                StyleBundle("~/bundles/kendo/common/css", kendoCommonCssPath)
+                .Include("~/Content/kendo/kendo.common.css"));
+
+            bundles.Add(new
+                StyleBundle("~/bundles/kendo/bootstrap/css", kendoBootstrapCssPath)
+                .Include("~/Content/kendo/kendo.bootstrap.css"));
         }
     }
 }
