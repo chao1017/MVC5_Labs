@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-TestStore-20150918045558.mdf;Initial Catalog=aspnet-TestStore-20150918045558;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\MVC5_Labs\\Mvc5_EF_DBFirst\\TestStore\\TestStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="NORTHWNDEntities-Web.config Connection String" description="NORTHWNDEntities 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Models.Northwind.csdl|res://*/Models.Northwind.ssdl|res://*/Models.Northwind.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=C1243855\SQLEXPRESS;initial catalog=NORTHWND;persist security info=True;user id=sa;password=PA$$word;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\MVC5_Labs\\Mvc5_EF_DBFirst\\TestStore\\TestStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NORTHWNDEntities']/@connectionString" />
+  </parameter>
+</parameters>
