@@ -2,3 +2,4 @@ D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\Servi
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\ShoopingService.pdb
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\obj\Debug\ShoopingService.dll
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\obj\Debug\ShoopingService.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\obj\Debug\ShoopingService.csprojResolveAssemblyReference.cache

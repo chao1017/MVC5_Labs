@@ -2,3 +2,4 @@ D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\Busin
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\BusinessLogicLayer\ShoppingBusiness\bin\Debug\ShoppingBusiness.pdb
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\BusinessLogicLayer\ShoppingBusiness\obj\Debug\ShoppingBusiness.dll
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\BusinessLogicLayer\ShoppingBusiness\obj\Debug\ShoppingBusiness.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\BusinessLogicLayer\ShoppingBusiness\obj\Debug\ShoppingBusiness.csprojResolveAssemblyReference.cache
