@@ -3,3 +3,16 @@ D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\Servi
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\obj\Debug\ShoopingService.dll
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\obj\Debug\ShoopingService.pdb
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\obj\Debug\ShoopingService.csprojResolveAssemblyReference.cache
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\ShoopingService.dll.config
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\EntityFramework.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\EntityFramework.xml
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\ShoppingBusiness.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\ShoppingData.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\UniversalUtility.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\ShoppingBusiness.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\UniversalUtility.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\ServiceLayer\ShoopingService\bin\Debug\ShoppingData.pdb

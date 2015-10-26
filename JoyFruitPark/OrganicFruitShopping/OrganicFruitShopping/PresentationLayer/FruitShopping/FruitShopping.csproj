@@ -1301,6 +1301,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLogicLayer\ShoppingBusiness\ShoppingBusiness.csproj">
+      <Project>{ca568119-42d7-43c5-8e00-80d1bdcf20d1}</Project>
+      <Name>ShoppingBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonUtility\UniversalUtility\UniversalUtility.csproj">
+      <Project>{655d5dfd-1654-4639-9996-1d990f7cf4e0}</Project>
+      <Name>UniversalUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ServiceLayer\ShoopingService\ShoopingService.csproj">
+      <Project>{72639898-5149-43aa-b5b3-d0421725d890}</Project>
+      <Name>ShoopingService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

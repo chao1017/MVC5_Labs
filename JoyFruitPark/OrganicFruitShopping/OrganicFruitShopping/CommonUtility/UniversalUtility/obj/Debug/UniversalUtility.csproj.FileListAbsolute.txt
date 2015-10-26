@@ -3,3 +3,10 @@ D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\Commo
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\obj\Debug\UniversalUtility.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\obj\Debug\UniversalUtility.dll
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\obj\Debug\UniversalUtility.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\UniversalUtility.dll.config
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\EntityFramework.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\EntityFramework.xml
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\CommonUtility\UniversalUtility\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
