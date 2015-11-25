@@ -1,4 +1,7 @@
-﻿using System;
+﻿#undef DEBUG
+#define TRACE
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -7,6 +10,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MvcMovie.Models;
+using NLog;
 
 namespace MvcMovie.Controllers
 {
@@ -39,8 +43,13 @@ namespace MvcMovie.Controllers
             {
                 movies = movies.Where(x => x.Genre == movieGenre);
             }
+
+            var config = LogManager.Configuration;
+            string basedirPath = AppDomain.CurrentDomain.BaseDirectory;
+#if TRACE
             logger = NLog.LogManager.GetLogger("rule1");
-            logger.Debug("This is a Debug log.");
+            logger.Trace("\nTrace Log\n" + movies);
+#endif
             return View(movies);
         }
 
@@ -56,6 +65,7 @@ namespace MvcMovie.Controllers
             {
                 return HttpNotFound();
             }
+
             return View(movie);
         }
 
@@ -94,6 +104,11 @@ namespace MvcMovie.Controllers
             {
                 return HttpNotFound();
             }
+
+#if DEBUG
+            logger = NLog.LogManager.GetLogger("rule1");
+            logger.Debug("\nDebug Log\n" + movie);
+#endif
             return View(movie);
         }
 
