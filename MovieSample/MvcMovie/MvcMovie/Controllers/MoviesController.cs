@@ -13,6 +13,7 @@ namespace MvcMovie.Controllers
     public class MoviesController : Controller
     {
         private MovieDBContext db = new MovieDBContext();
+        private NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         // GET: Movies
         public ActionResult Index(string movieGenre, string searchString)
@@ -38,7 +39,8 @@ namespace MvcMovie.Controllers
             {
                 movies = movies.Where(x => x.Genre == movieGenre);
             }
-
+            logger = NLog.LogManager.GetLogger("rule1");
+            logger.Debug("This is a Debug log.");
             return View(movies);
         }
 

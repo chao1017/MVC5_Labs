@@ -54,6 +54,8 @@ D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.dll
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.pdb
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Initial.resources
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.Cache
-D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Rating.resources
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.DataAnnotations.resources
+D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\NLog.config
+D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\NLog.dll
+D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\NLog.xml
