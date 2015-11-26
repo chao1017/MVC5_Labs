@@ -48,7 +48,7 @@ namespace MvcMovie.Controllers
             string basedirPath = AppDomain.CurrentDomain.BaseDirectory;
 #if TRACE
             logger = NLog.LogManager.GetLogger("rule1");
-            logger.Trace("\nTrace Log\n" + movies);
+            logger.Trace("\n{0}", movies);
 #endif
             return View(movies);
         }
