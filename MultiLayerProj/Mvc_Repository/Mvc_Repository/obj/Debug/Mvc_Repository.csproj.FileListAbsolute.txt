@@ -66,3 +66,4 @@ D:\GitHub\MVC5_Labs\MultiLayerProj\Mvc_Repository\Mvc_Repository\bin\Microsoft.O
 D:\GitHub\MVC5_Labs\MultiLayerProj\Mvc_Repository\Mvc_Repository\bin\zh-Hant\EntityFramework.resources.dll
 D:\GitHub\MVC5_Labs\MultiLayerProj\Mvc_Repository\Mvc_Repository\obj\Debug\Mvc_Repository.dll
 D:\GitHub\MVC5_Labs\MultiLayerProj\Mvc_Repository\Mvc_Repository\obj\Debug\Mvc_Repository.pdb
+D:\GitHub\MVC5_Labs\MultiLayerProj\Mvc_Repository\Mvc_Repository\obj\Debug\Mvc_Repository.csprojResolveAssemblyReference.cache
