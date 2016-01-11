@@ -59,4 +59,3 @@ D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\NLog.config
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\NLog.dll
 D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\bin\NLog.xml
-D:\GitHub\MVC5_Labs\MovieSample\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
