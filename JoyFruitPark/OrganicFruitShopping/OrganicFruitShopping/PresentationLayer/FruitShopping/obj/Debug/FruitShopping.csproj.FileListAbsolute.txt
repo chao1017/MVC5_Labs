@@ -91,3 +91,5 @@ D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\Prese
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\PresentationLayer\FruitShopping\bin\ShoppingBusiness.pdb
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\PresentationLayer\FruitShopping\bin\UniversalUtility.pdb
 D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\PresentationLayer\FruitShopping\bin\ShoopingService.pdb
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\PresentationLayer\FruitShopping\bin\ShoppingData.dll
+D:\GitHub\MVC5_Labs\JoyFruitPark\OrganicFruitShopping\OrganicFruitShopping\PresentationLayer\FruitShopping\bin\ShoppingData.pdb

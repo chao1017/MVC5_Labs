@@ -192,6 +192,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FruitShoopingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -204,6 +205,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\FruitShooping.mdf" />
+    <Content Include="App_Data\FruitShooping_log.ldf">
+      <DependentUpon>FruitShooping.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\kendo\2015.2.805\Black\editor.png" />
@@ -1291,7 +1296,8 @@
     <Content Include="Scripts\kendo\2015.2.805\kendo.window.min.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Views\FruitShooping\" />
+    <Folder Include="Views\FruitShopping\" />
     <Folder Include="Views\Shared\EditorTemplates\" />
   </ItemGroup>
   <ItemGroup>
@@ -1309,6 +1315,10 @@
     <ProjectReference Include="..\..\CommonUtility\UniversalUtility\UniversalUtility.csproj">
       <Project>{655d5dfd-1654-4639-9996-1d990f7cf4e0}</Project>
       <Name>UniversalUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccessLayer\ShoppingData\ShoppingData.csproj">
+      <Project>{77737e5f-0da9-4370-8b39-87261ab93364}</Project>
+      <Name>ShoppingData</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\ServiceLayer\ShoopingService\ShoopingService.csproj">
       <Project>{72639898-5149-43aa-b5b3-d0421725d890}</Project>
