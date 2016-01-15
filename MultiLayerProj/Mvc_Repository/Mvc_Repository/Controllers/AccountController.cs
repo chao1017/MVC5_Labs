@@ -10,7 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Mvc_Repository.Models;
 
-namespace Mvc_Repository.Controllers
+namespace Mvc_Repository.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

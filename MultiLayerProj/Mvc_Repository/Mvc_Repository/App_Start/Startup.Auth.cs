@@ -7,7 +7,7 @@ using Microsoft.Owin.Security.Google;
 using Owin;
 using Mvc_Repository.Models;
 
-namespace Mvc_Repository
+namespace Mvc_Repository.Web
 {
     public partial class Startup
     {

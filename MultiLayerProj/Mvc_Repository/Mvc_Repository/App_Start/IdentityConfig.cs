@@ -12,7 +12,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Mvc_Repository.Models;
 
-namespace Mvc_Repository
+namespace Mvc_Repository.Web
 {
     public class EmailService : IIdentityMessageService
     {
