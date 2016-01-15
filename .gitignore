@@ -1,3 +1,6 @@
 /MovieSample/MvcMovie/MvcMovie/obj/Debug/*.cache
 /MovieSample/MvcMovie/MvcMovie/obj/Debug/*.resources
 /MovieSample/MvcMovie/MvcMovie/App_Data/*.mdf
+/MovieSample/MvcMovie/MvcMovie/App_Data/*.ldf
+/MovieSample/MvcMovie/MvcMovie/App_Data/logs/*.log
+/MovieSample/MvcMovie/MvcMovie/logs
