@@ -1,0 +1,19 @@
+﻿<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/kendo/2014.1.318/kendo.common.min.css")
+    @Styles.Render("~/Content/kendo/2014.1.318/kendo.blueopal.min.css")
+    @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+    @Scripts.Render("~/Scripts/kendo/2014.1.318/kendo.web.min.js")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+

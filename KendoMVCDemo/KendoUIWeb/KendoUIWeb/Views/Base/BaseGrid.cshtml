@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "BaseGrid";
+    Layout = "~/Views/Shared/BaseLayoutPage.cshtml";
+}
+
+@section scripts
+{
+    <script src="~/Scripts/products.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            //create data source
+            var dataSrc = new kendo.data.DataSource({
+                data: products, //指定products.js的products陣列
+                schema: {
+                    model:{
+                        fields: {
+                            ProductName: { type: "string" },
+                            UnitPrice: { type: "number" },
+                            UnitsInStock: { type: "number" },
+                            Discontinued: { type: "boolean" }
+                        }
+                    }
+                },
+                pageSize: 20 //每筆顯示頁數設定為20
+            });
+
+            $("#gridData").kendoGrid({
+
+                //Grid的屬性及功能設置都可加在以下程式區塊
+                dataSource: dataSrc,
+                height: 500,
+                pageable: {//分頁導覽顯示
+
+                    input: true,
+                    numeric: false
+                },
+                columns: [
+                    "ProductName",
+                    { field: "UnitPrice", title: "Unit Price", format: "{0:c}", width: "130px"},
+                    { field: "UnitsInStock", title: "Units In Stock", width: "130px" },
+                    { field: "Discontinued", width:"130px" }
+                ],
+                filterable: true,
+                sortable: true,
+                selectable: true,
+                groupable: false,
+                resizable: true
+            });
+        });
+    </script>
+}
+
+<h2>BaseGrid</h2>
+
+<div id="gridData"></div>
