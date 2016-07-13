@@ -23,7 +23,7 @@
                 schema: {
                     data: function (d) {
                         
-                        //console.log("Line 26");
+                        console.log(d);
                         return d.data;
                     },
                     total: function (d) { return d.total; }
@@ -47,6 +47,7 @@
                 sortable: true,
                 pageable: true,
                 filterable: true,
+                selectable: "multiple",
                 width: '800'
 
             });
