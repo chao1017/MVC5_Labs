@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoUI.Web", "KendoUIWeb\KendoUI.Web.csproj", "{06FB4F8B-E259-4AD9-8498-24DB54BE7436}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoUIWeb", "KendoUIWeb\KendoUIWeb.csproj", "{06FB4F8B-E259-4AD9-8498-24DB54BE7436}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoUI.Model", "KendoUI.Model\KendoUI.Model.csproj", "{6013E5FB-0A38-4533-AF53-1F06BFBFD159}"
 EndProject

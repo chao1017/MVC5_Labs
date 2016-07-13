@@ -4,3 +4,5 @@
 /MovieSample/MvcMovie/MvcMovie/App_Data/*.ldf
 /MovieSample/MvcMovie/MvcMovie/App_Data/logs/*.log
 /MovieSample/MvcMovie/MvcMovie/logs
+/KendoMVCDemo/KendoUIWeb/KendoUIWeb/KendoUI.Web.csproj
+/KendoMVCDemo/KendoUIWeb/KendoUIWeb/KendoUI.Web.csproj.user

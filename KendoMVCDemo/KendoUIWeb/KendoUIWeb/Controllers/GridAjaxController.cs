@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using KendoUI.Model;
+using KendoGridBinder;
 
 namespace KendoUIWeb.Controllers
 {
@@ -18,6 +19,13 @@ namespace KendoUIWeb.Controllers
         public ActionResult Index()
         {
             return View(db.Customers.ToList());
+            //return View();
+        }
+
+        public JsonResult GetCustomer(KendoGridRequest request)
+        {
+            var result = db.Customers.ToList();
+            return Json(new KendoGrid<Customers>(request, result), JsonRequestBehavior.AllowGet);
         }
 
         // GET: GridAjax/Details/5

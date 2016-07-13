@@ -53,3 +53,8 @@ D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\bin\Microsoft.Owin.Securi
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\obj\Debug\KendoUIWeb.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\obj\Debug\KendoUIWeb.dll
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\obj\Debug\KendoUIWeb.pdb
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\bin\KendoUI.Model.dll
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\bin\KendoUI.Model.pdb
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\bin\zh-Hant\EntityFramework.resources.dll
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\bin\Dynamic.dll
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUIWeb\bin\KendoGridBinder.dll

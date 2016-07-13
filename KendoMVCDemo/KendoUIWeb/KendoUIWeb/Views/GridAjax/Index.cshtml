@@ -5,84 +5,53 @@
     Layout = "~/Views/Shared/BaseLayoutPage.cshtml";
 }
 
-<h2>Index</h2>
+@section scripts{
+    
+    <script type="text/javascript">
+        $(function () {
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CompanyName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ContactName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ContactTitle)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.City)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Region)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PostalCode)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Country)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Phone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fax)
-        </th>
-        <th></th>
-    </tr>
+            //用Ajax讀取資料
+            var dataSrc = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        type: "POST",
+                        url: "/GridAjax/GetCustomer",
+                        datatype: "json"
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CompanyName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ContactName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ContactTitle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Address)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.City)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Region)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PostalCode)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Country)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Phone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fax)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CustomerID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerID })
-        </td>
-    </tr>
+                    }
+                },
+                schema: {
+                    data: function (d) {
+                        
+                        //console.log("Line 26");
+                        return d.data;
+                    },
+                    total: function (d) { return d.total; }
+                },
+                pageSize: 20,
+                serverPaging: true,
+                serverSorting: true
+
+            });
+
+            $("#gridData").kendoGrid({
+
+                dataSource: dataSrc,
+                columns: [
+                    { field: "CustomerID", title: "CustomerID" },
+                    { field: "CompanyName", title: "CompanyName" },
+                    { field: "ContactName", title: "ContactName" },
+                    { field: "City", title: "City" }
+
+                ],//對應到customer資料表的欄位
+                sortable: true,
+                pageable: true,
+                filterable: true,
+                width: '800'
+
+            });
+        });            
+    </script>
 }
 
-</table>
+<div id="gridData"></div>

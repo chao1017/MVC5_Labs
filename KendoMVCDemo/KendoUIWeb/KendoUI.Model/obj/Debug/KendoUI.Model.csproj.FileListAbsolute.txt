@@ -9,3 +9,5 @@ D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\zh-Hant\Enti
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\obj\Debug\KendoUI.Model.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\obj\Debug\KendoUI.Model.dll
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\obj\Debug\KendoUI.Model.pdb
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\Dynamic.dll
+D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\KendoGridBinder.dll
