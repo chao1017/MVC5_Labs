@@ -23,7 +23,7 @@
                 schema: {
                     data: function (d) {
                         
-                        console.log(d);
+                        //console.log(d);
                         return d.data;
                     },
                     total: function (d) { return d.total; }
@@ -37,18 +37,20 @@
             $("#gridData").kendoGrid({
 
                 dataSource: dataSrc,
-                columns: [
+                columns: [//對應到customer資料表的欄位
                     { field: "CustomerID", title: "CustomerID" },
                     { field: "CompanyName", title: "CompanyName" },
                     { field: "ContactName", title: "ContactName" },
                     { field: "City", title: "City" }
 
-                ],//對應到customer資料表的欄位
+                ],
                 sortable: true,
                 pageable: true,
                 filterable: true,
                 selectable: "multiple",
-                width: '800'
+                scrollable: true,
+                height: '600px',
+                width: '800px'
 
             });
         });            
