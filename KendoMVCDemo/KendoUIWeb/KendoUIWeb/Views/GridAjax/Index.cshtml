@@ -42,6 +42,15 @@
 
                             alert(response.responseJSON);
                         }
+                    },
+                    destroy: {
+                        url: "/GridAjax/DeleteCustomer",
+                        datatype: "json",
+                        type: "POST",
+                        complete: function (response, status) {
+
+                            alert(response.responseJSON);
+                        }
                     }
                 },
                 schema: {
@@ -75,7 +84,7 @@
                     { field: "CompanyName", title: "CompanyName" },
                     { field: "ContactName", title: "ContactName" },
                     { field: "City", title: "City" },
-                    { command: ["edit"], title: "&nbsp;", width: "160px" }
+                    { command: ["edit","destroy"], title: "&nbsp;", width: "160px" }
 
                 ],
                 sortable: true,
