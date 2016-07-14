@@ -14,10 +14,34 @@
             var dataSrc = new kendo.data.DataSource({
                 transport: {
                     read: {
-                        type: "POST",
                         url: "/GridAjax/GetCustomer",
-                        datatype: "json"
+                        datatype: "json",
+                        type: "POST",
+                        complete: function (response, status) {
 
+                            if (response.responseJSON.ErrorCode == -1) {
+
+                                alert(response.responseJSON.ErrorMessage);
+                            }
+                        }
+                    },
+                    create: {
+                        url: "/GridAjax/CreateCustomer",
+                        datatype: "json",
+                        type: "POST",
+                        complete: function (response, status) {
+
+                            alert(response.responseJSON);
+                        }
+                    },
+                    update: {
+                        url: "/GridAjax/EditCustomer",
+                        datatype: "json",
+                        type: "POST",
+                        complete: function (response, status) {
+
+                            alert(response.responseJSON);
+                        }
                     }
                 },
                 schema: {
@@ -26,7 +50,16 @@
                         //console.log(d);
                         return d.data;
                     },
-                    total: function (d) { return d.total; }
+                    total: function (d) { return d.total; },
+                    model: {
+                        id: "CustomerID",
+                        fields: {
+                            product: { editable: false, nullable: false },
+                            CompanyName: { validation: { required: true } },
+                            ContactName: { validation: { required: true } },
+                            City: { validation: { required: true } }
+                        }
+                    }
                 },
                 pageSize: 20,
                 serverPaging: true,
@@ -41,7 +74,8 @@
                     { field: "CustomerID", title: "CustomerID" },
                     { field: "CompanyName", title: "CompanyName" },
                     { field: "ContactName", title: "ContactName" },
-                    { field: "City", title: "City" }
+                    { field: "City", title: "City" },
+                    { command: ["edit"], title: "&nbsp;", width: "160px" }
 
                 ],
                 sortable: true,
@@ -50,8 +84,12 @@
                 selectable: "multiple",
                 scrollable: true,
                 height: '600px',
-                width: '800px'
-
+                width: '800px',
+                toolbar:["create"],
+                editable: {
+                    mode: "inline", //popup mode, the other is inline mode
+                    update:true, //true:press 'update' then update data
+                }
             });
         });            
     </script>
