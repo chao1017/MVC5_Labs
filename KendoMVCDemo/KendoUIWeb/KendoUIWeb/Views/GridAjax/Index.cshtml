@@ -8,6 +8,7 @@
 @section scripts{
     
     <script type="text/javascript">
+
         $(function () {
 
             //用Ajax讀取資料
@@ -80,11 +81,11 @@
 
                 dataSource: dataSrc,
                 columns: [//對應到customer資料表的欄位
-                    { field: "CustomerID", title: "CustomerID" },
+                    { field: "CustomerID", title: "CustomerID", width:"200px" },
                     { field: "CompanyName", title: "CompanyName" },
                     { field: "ContactName", title: "ContactName" },
-                    { field: "City", title: "City" },
-                    { command: ["edit","destroy"], title: "&nbsp;", width: "160px" }
+                    { field: "City", title: "City", width:"150px" },
+                    { command: ["edit","destroy"], title: "&nbsp;", width: "200px" }
 
                 ],
                 sortable: true,
@@ -97,7 +98,8 @@
                 toolbar:["create"],
                 editable: {
                     mode: "inline", //popup mode, the other is inline mode
-                    update:true, //true:press 'update' then update data
+                    update: true, //true:press 'update' then update data
+                    confirmation: "Are you sure that you want to delete this record?"
                 }
             });
         });            
