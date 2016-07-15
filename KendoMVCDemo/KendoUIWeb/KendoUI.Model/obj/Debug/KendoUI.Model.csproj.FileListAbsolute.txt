@@ -6,7 +6,6 @@ D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\EntityFramew
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\EntityFramework.xml
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\zh-Hant\EntityFramework.resources.dll
-D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\obj\Debug\KendoUI.Model.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\obj\Debug\KendoUI.Model.dll
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\obj\Debug\KendoUI.Model.pdb
 D:\GitHub\MVC5_Labs\KendoMVCDemo\KendoUIWeb\KendoUI.Model\bin\Debug\Dynamic.dll

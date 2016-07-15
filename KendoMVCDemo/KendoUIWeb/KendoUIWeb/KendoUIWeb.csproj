@@ -903,6 +903,11 @@
     <Content Include="Views\GridAjax\Details.cshtml" />
     <Content Include="Views\GridAjax\Edit.cshtml" />
     <Content Include="Views\GridAjax\Index.cshtml" />
+    <Content Include="Views\gmh_leave_form\Create.cshtml" />
+    <Content Include="Views\gmh_leave_form\Delete.cshtml" />
+    <Content Include="Views\gmh_leave_form\Details.cshtml" />
+    <Content Include="Views\gmh_leave_form\Edit.cshtml" />
+    <Content Include="Views\gmh_leave_form\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
