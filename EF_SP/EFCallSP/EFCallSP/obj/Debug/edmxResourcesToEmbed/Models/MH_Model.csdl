@@ -1,0 +1,1670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CTCI_MH_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="corp_SP_list">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="sp_type" />
+      <PropertyRef Name="sp_name" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sp_type" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sp_name" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_hr_list">
+    <Key>
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="Fix_HR" Type="DateTime" Precision="3" />
+    <Property Name="Nor_HR" Type="DateTime" Precision="3" />
+    <Property Name="Base" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Mod_Base" Type="Int32" />
+    <Property Name="Break_Init" Type="DateTime" Precision="3" />
+    <Property Name="Break_End" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_z_code_list">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="code_type" />
+      <PropertyRef Name="code_id" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="code_type" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="code_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="code_desc" Type="String" MaxLength="600" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="modify_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modify_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="end_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_zz_code_type">
+    <Key>
+      <PropertyRef Name="code_type" />
+    </Key>
+    <Property Name="code_type" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="type_desc" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="corp_visible" Type="Boolean" Nullable="false" />
+    <Property Name="user_maintainable" Type="Boolean" Nullable="false" />
+    <Property Name="in_code_list" Type="Boolean" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="create_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="modify_date" Type="DateTime" Precision="3" />
+    <Property Name="modify_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="end_date" Type="DateTime" Precision="3" />
+    <Property Name="module_id" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="calendar">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="week_start" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="mhn0" />
+      <PropertyRef Name="mhn1" />
+      <PropertyRef Name="mhn2" />
+      <PropertyRef Name="mhn3" />
+      <PropertyRef Name="mhn4" />
+      <PropertyRef Name="mhn5" />
+      <PropertyRef Name="mhn6" />
+      <PropertyRef Name="date0" />
+      <PropertyRef Name="date1" />
+      <PropertyRef Name="date2" />
+      <PropertyRef Name="date3" />
+      <PropertyRef Name="date4" />
+      <PropertyRef Name="date5" />
+      <PropertyRef Name="date6" />
+      <PropertyRef Name="WKflag0" />
+      <PropertyRef Name="WKflag1" />
+      <PropertyRef Name="WKflag2" />
+      <PropertyRef Name="WKflag3" />
+      <PropertyRef Name="WKflag4" />
+      <PropertyRef Name="WKflag5" />
+      <PropertyRef Name="WKflag6" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="week_start" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mhn0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="date0" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date1" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date2" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date3" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date4" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date5" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="date6" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag0" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag1" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag2" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag3" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag4" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag5" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="WKflag6" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="calendar_list">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="calendar_desc" />
+      <PropertyRef Name="calendar_desc_e" />
+      <PropertyRef Name="country_code" />
+      <PropertyRef Name="country_desc" />
+      <PropertyRef Name="oversea_day" />
+      <PropertyRef Name="is_default" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_desc" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="calendar_desc_e" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="country_code" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="country_desc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="oversea_day" Type="Int32" Nullable="false" />
+    <Property Name="is_default" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="corp_leave_permit">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="vacation_permit_nxt" />
+      <PropertyRef Name="vacation_permit_cur" />
+      <PropertyRef Name="vacation_permit_lst" />
+      <PropertyRef Name="vacation_permit_b_lst" />
+      <PropertyRef Name="mod_by" />
+      <PropertyRef Name="mod_date" />
+      <PropertyRef Name="auto_flag" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="vacation_permit_nxt" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="vacation_permit_cur" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="vacation_permit_lst" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="vacation_permit_b_lst" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mod_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="auto_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_apply_leave">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="leave_code" />
+      <PropertyRef Name="beg_date" />
+      <PropertyRef Name="end_date" />
+      <PropertyRef Name="apply_year" />
+      <PropertyRef Name="apply_mh" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="reason" />
+      <PropertyRef Name="confirm_flag" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="beg_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="end_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="apply_year" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="apply_mh" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Precision="3" />
+    <Property Name="reason" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="confirm_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="confirm_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="confirm_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_approver_special">
+    <Key>
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="name_c" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="name_c" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_auto_gen_mh_special">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="need_keyin" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="remark" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="need_keyin" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_checker">
+    <Key>
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="checker_id" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_date" />
+      <PropertyRef Name="work_site" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="work_site" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_checker_log">
+    <Key>
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="checker_id" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="work_site" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="delete_date" />
+    </Key>
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Precision="3" />
+    <Property Name="work_site" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="delete_date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_chk_unit_prj">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="remark" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_corp_tab">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="mh_enabled_flag" />
+      <PropertyRef Name="mh_enabled_yyyymm" />
+      <PropertyRef Name="mh_sign_level" />
+      <PropertyRef Name="mh_Decimal_point" />
+      <PropertyRef Name="leave_enabled_flag" />
+      <PropertyRef Name="leave_enabled_yyyymm" />
+      <PropertyRef Name="leave_sign_level" />
+      <PropertyRef Name="Leave_Decimal_point" />
+      <PropertyRef Name="OT_enabled_flag" />
+      <PropertyRef Name="OT_enabled_yyyymm" />
+      <PropertyRef Name="OT_sign_level" />
+      <PropertyRef Name="OT_Decimal_point" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_enabled_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_enabled_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_sign_level" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_Decimal_point" Type="Int32" Nullable="false" />
+    <Property Name="leave_enabled_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_enabled_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_sign_level" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Leave_Decimal_point" Type="Int32" Nullable="false" />
+    <Property Name="OT_enabled_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OT_enabled_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OT_sign_level" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OT_Decimal_point" Type="Int32" Nullable="false" />
+    <Property Name="OT_Option_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="gmh_data">
+    <Key>
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="class_id" />
+      <PropertyRef Name="unit_area" />
+      <PropertyRef Name="sys_no" />
+      <PropertyRef Name="equip_no" />
+      <PropertyRef Name="serial_no" />
+      <PropertyRef Name="recycle_wk" />
+      <PropertyRef Name="mhn0" />
+      <PropertyRef Name="mho0" />
+      <PropertyRef Name="mhn1" />
+      <PropertyRef Name="mho1" />
+      <PropertyRef Name="mhn2" />
+      <PropertyRef Name="mho2" />
+      <PropertyRef Name="mhn3" />
+      <PropertyRef Name="mho3" />
+      <PropertyRef Name="mhn4" />
+      <PropertyRef Name="mho4" />
+      <PropertyRef Name="mhn5" />
+      <PropertyRef Name="mho5" />
+      <PropertyRef Name="mhn6" />
+      <PropertyRef Name="mho6" />
+      <PropertyRef Name="mhn_tot" />
+      <PropertyRef Name="mho_tot" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="sign_sw" />
+      <PropertyRef Name="check_by" />
+      <PropertyRef Name="check_by_corp" />
+      <PropertyRef Name="approve_by" />
+      <PropertyRef Name="approve_by_corp" />
+      <PropertyRef Name="cost_date" />
+      <PropertyRef Name="salary_date" />
+      <PropertyRef Name="mod_by" />
+      <PropertyRef Name="mod_by_corp" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="phase" />
+      <PropertyRef Name="discipline" />
+      <PropertyRef Name="org_phase" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="checker" />
+      <PropertyRef Name="checker_corp" />
+      <PropertyRef Name="approver" />
+      <PropertyRef Name="approver_corp" />
+      <PropertyRef Name="employee_status0" />
+      <PropertyRef Name="employee_status1" />
+      <PropertyRef Name="employee_status2" />
+      <PropertyRef Name="employee_status3" />
+      <PropertyRef Name="employee_status4" />
+      <PropertyRef Name="employee_status5" />
+      <PropertyRef Name="employee_status6" />
+      <PropertyRef Name="remark" />
+    </Key>
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="class_id" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="unit_area" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sys_no" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="equip_no" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="serial_no" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="recycle_wk" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="mhn0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sign_sw" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Precision="3" />
+    <Property Name="approve_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_date" Type="DateTime" Precision="3" />
+    <Property Name="cost_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="salary_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_date" Type="DateTime" Precision="3" />
+    <Property Name="mod_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="discipline" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="org_phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status0" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status1" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status2" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status3" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status4" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status5" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status6" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_data_pre">
+    <Key>
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="class_id" />
+      <PropertyRef Name="unit_area" />
+      <PropertyRef Name="sys_no" />
+      <PropertyRef Name="equip_no" />
+      <PropertyRef Name="serial_no" />
+      <PropertyRef Name="recycle_wk" />
+      <PropertyRef Name="mhn0" />
+      <PropertyRef Name="mho0" />
+      <PropertyRef Name="mhn1" />
+      <PropertyRef Name="mho1" />
+      <PropertyRef Name="mhn2" />
+      <PropertyRef Name="mho2" />
+      <PropertyRef Name="mhn3" />
+      <PropertyRef Name="mho3" />
+      <PropertyRef Name="mhn4" />
+      <PropertyRef Name="mho4" />
+      <PropertyRef Name="mhn5" />
+      <PropertyRef Name="mho5" />
+      <PropertyRef Name="mhn6" />
+      <PropertyRef Name="mho6" />
+      <PropertyRef Name="mhn_tot" />
+      <PropertyRef Name="mho_tot" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="sign_sw" />
+      <PropertyRef Name="check_by" />
+      <PropertyRef Name="check_by_corp" />
+      <PropertyRef Name="approve_by" />
+      <PropertyRef Name="approve_by_corp" />
+      <PropertyRef Name="cost_date" />
+      <PropertyRef Name="salary_date" />
+      <PropertyRef Name="mod_by" />
+      <PropertyRef Name="mod_by_corp" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="phase" />
+      <PropertyRef Name="discipline" />
+      <PropertyRef Name="org_phase" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="checker" />
+      <PropertyRef Name="checker_corp" />
+      <PropertyRef Name="approver" />
+      <PropertyRef Name="approver_corp" />
+      <PropertyRef Name="employee_status0" />
+      <PropertyRef Name="employee_status1" />
+      <PropertyRef Name="employee_status2" />
+      <PropertyRef Name="employee_status3" />
+      <PropertyRef Name="employee_status4" />
+      <PropertyRef Name="employee_status5" />
+      <PropertyRef Name="employee_status6" />
+      <PropertyRef Name="remark" />
+    </Key>
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="class_id" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="unit_area" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sys_no" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="equip_no" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="serial_no" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="recycle_wk" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="mhn0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sign_sw" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Precision="3" />
+    <Property Name="approve_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_date" Type="DateTime" Precision="3" />
+    <Property Name="cost_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="salary_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_date" Type="DateTime" Precision="3" />
+    <Property Name="mod_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="discipline" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="org_phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status0" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status1" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status2" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status3" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status4" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status5" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status6" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_data_reject">
+    <Key>
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="class_id" />
+      <PropertyRef Name="unit_area" />
+      <PropertyRef Name="sys_no" />
+      <PropertyRef Name="equip_no" />
+      <PropertyRef Name="serial_no" />
+      <PropertyRef Name="recycle_wk" />
+      <PropertyRef Name="mhn0" />
+      <PropertyRef Name="mho0" />
+      <PropertyRef Name="mhn1" />
+      <PropertyRef Name="mho1" />
+      <PropertyRef Name="mhn2" />
+      <PropertyRef Name="mho2" />
+      <PropertyRef Name="mhn3" />
+      <PropertyRef Name="mho3" />
+      <PropertyRef Name="mhn4" />
+      <PropertyRef Name="mho4" />
+      <PropertyRef Name="mhn5" />
+      <PropertyRef Name="mho5" />
+      <PropertyRef Name="mhn6" />
+      <PropertyRef Name="mho6" />
+      <PropertyRef Name="mhn_tot" />
+      <PropertyRef Name="mho_tot" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="sign_sw" />
+      <PropertyRef Name="check_by" />
+      <PropertyRef Name="check_by_corp" />
+      <PropertyRef Name="approve_by" />
+      <PropertyRef Name="approve_by_corp" />
+      <PropertyRef Name="cost_date" />
+      <PropertyRef Name="salary_date" />
+      <PropertyRef Name="mod_by" />
+      <PropertyRef Name="mod_by_corp" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="phase" />
+      <PropertyRef Name="discipline" />
+      <PropertyRef Name="org_phase" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="checker" />
+      <PropertyRef Name="checker_corp" />
+      <PropertyRef Name="approver" />
+      <PropertyRef Name="approver_corp" />
+      <PropertyRef Name="employee_status0" />
+      <PropertyRef Name="employee_status1" />
+      <PropertyRef Name="employee_status2" />
+      <PropertyRef Name="employee_status3" />
+      <PropertyRef Name="employee_status4" />
+      <PropertyRef Name="employee_status5" />
+      <PropertyRef Name="employee_status6" />
+      <PropertyRef Name="remark" />
+      <PropertyRef Name="reject_by" />
+      <PropertyRef Name="reject_by_corp" />
+      <PropertyRef Name="reject_reason" />
+    </Key>
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="class_id" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="unit_area" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sys_no" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="equip_no" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="serial_no" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="recycle_wk" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="mhn0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sign_sw" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Precision="3" />
+    <Property Name="approve_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_date" Type="DateTime" Precision="3" />
+    <Property Name="cost_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="salary_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_date" Type="DateTime" Precision="3" />
+    <Property Name="mod_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="discipline" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="org_phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status0" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status1" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status2" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status3" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status4" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status5" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_status6" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="reject_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="reject_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="reject_reason" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="reject_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_data_tmp_leave">
+    <Key>
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="equip_no" />
+      <PropertyRef Name="mhn0" />
+      <PropertyRef Name="mhn1" />
+      <PropertyRef Name="mhn2" />
+      <PropertyRef Name="mhn3" />
+      <PropertyRef Name="mhn4" />
+      <PropertyRef Name="mhn5" />
+      <PropertyRef Name="mhn6" />
+      <PropertyRef Name="mhn_tot" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="check_by" />
+      <PropertyRef Name="check_by_corp" />
+      <PropertyRef Name="approve_by" />
+      <PropertyRef Name="approve_by_corp" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="checker" />
+      <PropertyRef Name="checker_corp" />
+      <PropertyRef Name="approver" />
+      <PropertyRef Name="approver_corp" />
+    </Key>
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="equip_no" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mhn0" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Precision="3" />
+    <Property Name="approve_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_date" Type="DateTime" Precision="3" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_data1">
+    <Key>
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="class_id" />
+      <PropertyRef Name="unit_area" />
+      <PropertyRef Name="sys_no" />
+      <PropertyRef Name="equip_no" />
+      <PropertyRef Name="serial_no" />
+      <PropertyRef Name="recycle_wk" />
+      <PropertyRef Name="mhn_tot" />
+      <PropertyRef Name="mho_tot" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="sign_sw" />
+      <PropertyRef Name="cost_date" />
+      <PropertyRef Name="salary_date" />
+      <PropertyRef Name="mod_by" />
+      <PropertyRef Name="mod_by_corp" />
+      <PropertyRef Name="cost_yyyymm" />
+      <PropertyRef Name="phase" />
+      <PropertyRef Name="discipline" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="class_id" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="unit_area" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sys_no" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="equip_no" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="serial_no" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="recycle_wk" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="mho_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="sign_sw" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="salary_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_date" Type="DateTime" Precision="3" />
+    <Property Name="mod_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mod_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_yyyymm" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="discipline" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_deputy_detail">
+    <Key>
+      <PropertyRef Name="detail_id" />
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+    </Key>
+    <Property Name="detail_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_deputy_item_list">
+    <Key>
+      <PropertyRef Name="functionID" />
+      <PropertyRef Name="function_Desc" />
+      <PropertyRef Name="detail_flag" />
+      <PropertyRef Name="URL" />
+      <PropertyRef Name="FUNCID" />
+      <PropertyRef Name="Sort_Key" />
+    </Key>
+    <Property Name="functionID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="function_Desc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="detail_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="URL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FUNCID" Type="Int32" Nullable="false" />
+    <Property Name="Sort_Key" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_deputy_master">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="deputy_id" />
+      <PropertyRef Name="functionID" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_date" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="deputy_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="functionID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_for_mp">
+    <Key>
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="r1" />
+      <PropertyRef Name="o1" />
+      <PropertyRef Name="r2" />
+      <PropertyRef Name="o2" />
+      <PropertyRef Name="r3" />
+      <PropertyRef Name="o3" />
+      <PropertyRef Name="r4" />
+      <PropertyRef Name="o4" />
+      <PropertyRef Name="r5" />
+      <PropertyRef Name="o5" />
+      <PropertyRef Name="r6" />
+      <PropertyRef Name="o6" />
+      <PropertyRef Name="r7" />
+      <PropertyRef Name="o7" />
+      <PropertyRef Name="r8" />
+      <PropertyRef Name="o8" />
+      <PropertyRef Name="r9" />
+      <PropertyRef Name="o9" />
+      <PropertyRef Name="leave_tot" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="emp_type" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="r1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o1" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o2" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o3" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o4" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o5" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o6" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r7" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o7" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r8" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o8" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="r9" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="o9" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_tot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_for_salary">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="mh_type" />
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="data_yyyymm" />
+      <PropertyRef Name="resign_status" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="mh_date" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="data_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="resign_status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="sex" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="unit_area" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="ot_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="ot_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="ot_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="ot_200" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_200" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_200" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_200" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_ot_permit" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_ot_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_ot_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_ot_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_ot_200" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="g_tax_200" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_sw" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="regular_mh" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_for_salary_oversea">
+    <Key>
+      <PropertyRef Name="mh_type" />
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="data_yyyymm" />
+      <PropertyRef Name="resign_status" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="mh_date" />
+    </Key>
+    <Property Name="mh_type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="data_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="resign_status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="mh_leave" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="sex" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="unit_area" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="gmh_for_salary1">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="mh_type" />
+      <PropertyRef Name="mh_id" />
+      <PropertyRef Name="data_yyyymm" />
+      <PropertyRef Name="resign_status" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="mh_date" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="data_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="resign_status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="mhn_tot" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="sex" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="unit_area" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="ot_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="ot_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="ot_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="d_tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_100" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_133" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="m_tax_166" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="tax_sw" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="regular_mh" Type="Decimal" Precision="10" Scale="1" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_holiday">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="mh_date" />
+      <PropertyRef Name="holiday_desc" />
+      <PropertyRef Name="rate" />
+      <PropertyRef Name="keyin_by" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="holiday_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="rate" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_keyin_flab">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="work_site" />
+      <PropertyRef Name="prj_no_str" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="work_site" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no_str" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_form">
+    <Key>
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="number" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="leave_code" />
+      <PropertyRef Name="beg_date" />
+      <PropertyRef Name="end_date" />
+      <PropertyRef Name="total_hr" />
+      <PropertyRef Name="reason" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="deputy" />
+      <PropertyRef Name="deputy_corp" />
+      <PropertyRef Name="deputy_flag" />
+      <PropertyRef Name="deputy_reject" />
+      <PropertyRef Name="checker" />
+      <PropertyRef Name="checker_corp" />
+      <PropertyRef Name="check_by" />
+      <PropertyRef Name="check_by_corp" />
+      <PropertyRef Name="approver" />
+      <PropertyRef Name="approver_corp" />
+      <PropertyRef Name="approve_by" />
+      <PropertyRef Name="approve_by_corp" />
+      <PropertyRef Name="reject" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="file_url" />
+      <PropertyRef Name="is_vip" />
+      <PropertyRef Name="revoke_desc" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="number" Type="String" MaxLength="18" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="beg_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="end_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="total_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="reason" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="deputy" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="deputy_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="deputy_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="deputy_reject" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="deputy_date" Type="DateTime" Precision="3" />
+    <Property Name="checker" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Precision="3" />
+    <Property Name="approver" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_date" Type="DateTime" Precision="3" />
+    <Property Name="reject" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Precision="3" />
+    <Property Name="mod_date" Type="DateTime" Precision="3" />
+    <Property Name="file_url" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_vip" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="revoke_desc" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="revoke_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_form_detail">
+    <Key>
+      <PropertyRef Name="detail_id" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="number" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="normal_hr" />
+      <PropertyRef Name="leave_date" />
+      <PropertyRef Name="leave_wk" />
+      <PropertyRef Name="leave_hr" />
+      <PropertyRef Name="leave_time" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="detail_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="number" Type="String" MaxLength="18" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="normal_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_wk" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_time" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_storage">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="data_year" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="mho" />
+      <PropertyRef Name="permit_ot" />
+      <PropertyRef Name="leave_storage" />
+      <PropertyRef Name="leave_used" />
+      <PropertyRef Name="leave_left" />
+      <PropertyRef Name="old_employee_id" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="data_year" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mho" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="permit_ot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_storage" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_used" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_left" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="schedule_date" Type="DateTime" Precision="3" />
+    <Property Name="old_employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_storage_053">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="leave_storage" />
+      <PropertyRef Name="leave_used" />
+      <PropertyRef Name="leave_left" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_storage" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_used" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_left" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="schedule_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_leave_storage_resign_013">
+    <Key>
+      <PropertyRef Name="salary_yyyymm" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="name_c" />
+      <PropertyRef Name="leave_storage" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="salary_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="name_c" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="resign_date" Type="DateTime" Precision="3" />
+    <Property Name="leave_storage" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_storage_year_summary_013">
+    <Key>
+      <PropertyRef Name="data_year" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="keep_year" />
+      <PropertyRef Name="leave_keep" />
+      <PropertyRef Name="old_employee_id" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="data_year" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keep_year" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_keep" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="schedule_date" Type="DateTime" Precision="3" />
+    <Property Name="old_employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_leave_used_record_013_9933002">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="record_id" />
+      <PropertyRef Name="detail_id" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="number" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="leave_hr" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="record_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="detail_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="number" Type="String" MaxLength="18" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="leave_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_leave_used_record_053">
+    <Key>
+      <PropertyRef Name="record_id" />
+      <PropertyRef Name="detail_id" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="leave_hr" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="record_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="detail_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="number" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="leave_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_message_for_003_left">
+    <Key>
+      <PropertyRef Name="mm" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="name_c" />
+      <PropertyRef Name="enter_date" />
+      <PropertyRef Name="leave_permit" />
+      <PropertyRef Name="leave_used" />
+      <PropertyRef Name="exec_date" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="mm" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="name_c" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="enter_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="leave_permit" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_used" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="exec_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_ot_over_46_permit">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="beg_yyyymm" />
+      <PropertyRef Name="end_yyyymm" />
+      <PropertyRef Name="limit_ot" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_date" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="beg_yyyymm" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="end_yyyymm" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="limit_ot" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_overtime_form">
+    <Key>
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="phase" />
+      <PropertyRef Name="discipline" />
+      <PropertyRef Name="beg_date" />
+      <PropertyRef Name="end_date" />
+      <PropertyRef Name="reason" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="discipline" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="beg_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="end_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="reason" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_overtime_form_detail">
+    <Key>
+      <PropertyRef Name="detail_id" />
+      <PropertyRef Name="form_id" />
+      <PropertyRef Name="mh_group" />
+      <PropertyRef Name="cost_center" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="cost_code" />
+      <PropertyRef Name="phase" />
+      <PropertyRef Name="discipline" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="normal_hr" />
+      <PropertyRef Name="overtime_date" />
+      <PropertyRef Name="overtime_hr" />
+      <PropertyRef Name="overtime_time" />
+      <PropertyRef Name="overtime_week" />
+      <PropertyRef Name="overtime_option" />
+      <PropertyRef Name="week_end" />
+      <PropertyRef Name="checker" />
+      <PropertyRef Name="checker_corp" />
+      <PropertyRef Name="check_by" />
+      <PropertyRef Name="check_by_corp" />
+      <PropertyRef Name="approver" />
+      <PropertyRef Name="approver_corp" />
+      <PropertyRef Name="approve_by" />
+      <PropertyRef Name="approve_by_corp" />
+      <PropertyRef Name="reject" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_by_corp" />
+      <PropertyRef Name="keyin_date" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="detail_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="form_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mh_group" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_center" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_code" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="phase" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="discipline" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="normal_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="overtime_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="overtime_hr" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="overtime_time" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="overtime_week" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="overtime_option" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="week_end" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Precision="3" />
+    <Property Name="approver" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approver_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="approve_date" Type="DateTime" Precision="3" />
+    <Property Name="reject" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by_corp" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="mod_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_pm_in_site">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="prj_key" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="remark" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_key" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gmh_resign_lock">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="name_c" />
+      <PropertyRef Name="resign_date" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="name_c" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="resign_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="gmh_RN_prj_checker">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="checker_id" />
+      <PropertyRef Name="keyin_by" />
+      <PropertyRef Name="keyin_date" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="checker_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="keyin_date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="HR_emp_OT_flag">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="OT_flag" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OT_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="message">
+    <Key>
+      <PropertyRef Name="rowid" />
+      <PropertyRef Name="ntaccount" />
+      <PropertyRef Name="messagedesc" />
+      <PropertyRef Name="url" />
+      <PropertyRef Name="priorityid" />
+      <PropertyRef Name="indate" />
+      <PropertyRef Name="duedate" />
+      <PropertyRef Name="cateid" />
+      <PropertyRef Name="subcate" />
+      <PropertyRef Name="recid" />
+      <PropertyRef Name="oriaccount" />
+      <PropertyRef Name="oriname" />
+      <PropertyRef Name="prj_no" />
+      <PropertyRef Name="subcate_desc" />
+      <PropertyRef Name="parameter" />
+      <PropertyRef Name="internet_flag" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="rowid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ntaccount" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="messagedesc" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="priorityid" Type="Int32" Nullable="false" />
+    <Property Name="indate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="duedate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cateid" Type="Int32" Nullable="false" />
+    <Property Name="subcate" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="recid" Type="Int32" Nullable="false" />
+    <Property Name="oriaccount" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="oriname" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_no" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="subcate_desc" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="parameter" Type="String" MaxLength="100" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="internet_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="month_frozen">
+    <Key>
+      <PropertyRef Name="mh_yyyymm" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="mh_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cost_date" Type="DateTime" Precision="3" />
+    <Property Name="frozen_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="oversea_leave_confirm">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="seq_no" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="year" />
+      <PropertyRef Name="permit" />
+      <PropertyRef Name="used" />
+      <PropertyRef Name="leave_left" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="sal_yyyymm" />
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="note" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="seq_no" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="year" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="permit" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="used" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="leave_left" Type="Decimal" Precision="10" Scale="1" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sal_yyyymm" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="note" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="oversea_leave_to_bonus_record">
+    <Key>
+      <PropertyRef Name="data_id" />
+      <PropertyRef Name="seq_no" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="calendar_id" />
+      <PropertyRef Name="trans_date" />
+      <PropertyRef Name="oversea_date" />
+      <PropertyRef Name="return_date" />
+      <PropertyRef Name="trans_edit_date" />
+      <PropertyRef Name="oversea_edit_date" />
+      <PropertyRef Name="return_edit_date" />
+      <PropertyRef Name="salary_flag" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="corp_id" />
+    </Key>
+    <Property Name="data_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="seq_no" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="calendar_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="trans_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="oversea_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="return_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="trans_edit_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="oversea_edit_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="return_edit_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="salary_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modify_by" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="modify_date" Type="DateTime" Precision="3" />
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="overtime_permit_special">
+    <Key>
+      <PropertyRef Name="corp_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="OT_permit" />
+    </Key>
+    <Property Name="corp_id" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="employee_id" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OT_permit" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="prj_type_list">
+    <Key>
+      <PropertyRef Name="prj_type" />
+      <PropertyRef Name="prj_type_desc" />
+    </Key>
+    <Property Name="prj_type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prj_type_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CTCI_MH_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="corp_SP_list" EntityType="Self.corp_SP_list" />
+    <EntitySet Name="gmh_leave_hr_list" EntityType="Self.gmh_leave_hr_list" />
+    <EntitySet Name="gmh_z_code_list" EntityType="Self.gmh_z_code_list" />
+    <EntitySet Name="gmh_zz_code_type" EntityType="Self.gmh_zz_code_type" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="calendar" EntityType="Self.calendar" />
+    <EntitySet Name="calendar_list" EntityType="Self.calendar_list" />
+    <EntitySet Name="corp_leave_permit" EntityType="Self.corp_leave_permit" />
+    <EntitySet Name="gmh_apply_leave" EntityType="Self.gmh_apply_leave" />
+    <EntitySet Name="gmh_approver_special" EntityType="Self.gmh_approver_special" />
+    <EntitySet Name="gmh_auto_gen_mh_special" EntityType="Self.gmh_auto_gen_mh_special" />
+    <EntitySet Name="gmh_checker" EntityType="Self.gmh_checker" />
+    <EntitySet Name="gmh_checker_log" EntityType="Self.gmh_checker_log" />
+    <EntitySet Name="gmh_chk_unit_prj" EntityType="Self.gmh_chk_unit_prj" />
+    <EntitySet Name="gmh_corp_tab" EntityType="Self.gmh_corp_tab" />
+    <EntitySet Name="gmh_data" EntityType="Self.gmh_data" />
+    <EntitySet Name="gmh_data_pre" EntityType="Self.gmh_data_pre" />
+    <EntitySet Name="gmh_data_reject" EntityType="Self.gmh_data_reject" />
+    <EntitySet Name="gmh_data_tmp_leave" EntityType="Self.gmh_data_tmp_leave" />
+    <EntitySet Name="gmh_data1" EntityType="Self.gmh_data1" />
+    <EntitySet Name="gmh_deputy_detail" EntityType="Self.gmh_deputy_detail" />
+    <EntitySet Name="gmh_deputy_item_list" EntityType="Self.gmh_deputy_item_list" />
+    <EntitySet Name="gmh_deputy_master" EntityType="Self.gmh_deputy_master" />
+    <EntitySet Name="gmh_for_mp" EntityType="Self.gmh_for_mp" />
+    <EntitySet Name="gmh_for_salary" EntityType="Self.gmh_for_salary" />
+    <EntitySet Name="gmh_for_salary_oversea" EntityType="Self.gmh_for_salary_oversea" />
+    <EntitySet Name="gmh_for_salary1" EntityType="Self.gmh_for_salary1" />
+    <EntitySet Name="gmh_holiday" EntityType="Self.gmh_holiday" />
+    <EntitySet Name="gmh_keyin_flab" EntityType="Self.gmh_keyin_flab" />
+    <EntitySet Name="gmh_leave_form" EntityType="Self.gmh_leave_form" />
+    <EntitySet Name="gmh_leave_form_detail" EntityType="Self.gmh_leave_form_detail" />
+    <EntitySet Name="gmh_leave_storage" EntityType="Self.gmh_leave_storage" />
+    <EntitySet Name="gmh_leave_storage_053" EntityType="Self.gmh_leave_storage_053" />
+    <EntitySet Name="gmh_leave_storage_resign_013" EntityType="Self.gmh_leave_storage_resign_013" />
+    <EntitySet Name="gmh_leave_storage_year_summary_013" EntityType="Self.gmh_leave_storage_year_summary_013" />
+    <EntitySet Name="gmh_leave_used_record_013_9933002" EntityType="Self.gmh_leave_used_record_013_9933002" />
+    <EntitySet Name="gmh_leave_used_record_053" EntityType="Self.gmh_leave_used_record_053" />
+    <EntitySet Name="gmh_message_for_003_left" EntityType="Self.gmh_message_for_003_left" />
+    <EntitySet Name="gmh_ot_over_46_permit" EntityType="Self.gmh_ot_over_46_permit" />
+    <EntitySet Name="gmh_overtime_form" EntityType="Self.gmh_overtime_form" />
+    <EntitySet Name="gmh_overtime_form_detail" EntityType="Self.gmh_overtime_form_detail" />
+    <EntitySet Name="gmh_pm_in_site" EntityType="Self.gmh_pm_in_site" />
+    <EntitySet Name="gmh_resign_lock" EntityType="Self.gmh_resign_lock" />
+    <EntitySet Name="gmh_RN_prj_checker" EntityType="Self.gmh_RN_prj_checker" />
+    <EntitySet Name="HR_emp_OT_flag" EntityType="Self.HR_emp_OT_flag" />
+    <EntitySet Name="message" EntityType="Self.message" />
+    <EntitySet Name="month_frozen" EntityType="Self.month_frozen" />
+    <EntitySet Name="oversea_leave_confirm" EntityType="Self.oversea_leave_confirm" />
+    <EntitySet Name="oversea_leave_to_bonus_record" EntityType="Self.oversea_leave_to_bonus_record" />
+    <EntitySet Name="overtime_permit_special" EntityType="Self.overtime_permit_special" />
+    <EntitySet Name="prj_type_list" EntityType="Self.prj_type_list" />
+    <FunctionImport Name="s_gmh_get_leave_form_data" ReturnType="Collection(CTCI_MH_DBModel.s_gmh_get_leave_form_data_Result)">
+      <Parameter Name="form_id" Mode="In" Type="String" />
+      <Parameter Name="corp_id" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="s_gmh_get_leave_form_data_Result">
+    <Property Type="String" Name="form_id" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="application_id" Nullable="false" MaxLength="18" />
+    <Property Type="String" Name="status" Nullable="true" MaxLength="600" />
+    <Property Type="String" Name="employee_id" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="applicant" Nullable="true" MaxLength="94" />
+    <Property Type="String" Name="applicant_ext" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="leave_code" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="code_desc" Nullable="true" MaxLength="80" />
+    <Property Type="String" Name="period" Nullable="true" MaxLength="38" />
+    <Property Type="Decimal" Name="total_hr" Nullable="false" Precision="10" Scale="1" />
+    <Property Type="String" Name="reason" Nullable="false" MaxLength="120" />
+    <Property Type="String" Name="prj_no" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="deputy" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="deputy_name" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="deputy_status" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="checker" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="checker_name" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="approver" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="approver_name" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="deputy_reject_reason" Nullable="true" MaxLength="120" />
+    <Property Type="String" Name="reject_reason" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="revoke_reason" Nullable="true" MaxLength="120" />
+    <Property Type="String" Name="status_code" Nullable="false" MaxLength="1" />
+  </ComplexType>
+</Schema>

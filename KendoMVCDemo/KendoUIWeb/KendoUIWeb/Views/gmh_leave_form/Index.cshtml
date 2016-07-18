@@ -1,0 +1,64 @@
+﻿@model IEnumerable<KendoUI.Model.gmh_leave_form>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/BaseLayoutPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.deputy_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.check_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.approve_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.keyin_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mod_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.revoke_date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.deputy_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.check_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.approve_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.keyin_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mod_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.revoke_date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

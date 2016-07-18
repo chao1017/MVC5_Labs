@@ -1,0 +1,67 @@
+﻿@model KendoUI.Model.gmh_leave_form
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/BaseLayoutPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>gmh_leave_form</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.deputy_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deputy_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.check_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.check_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.approve_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.approve_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.keyin_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.keyin_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mod_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mod_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.revoke_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.revoke_date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
