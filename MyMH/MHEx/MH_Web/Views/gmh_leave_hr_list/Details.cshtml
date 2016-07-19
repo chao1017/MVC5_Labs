@@ -1,0 +1,66 @@
+﻿@model MH_Repository.Models.gmh_leave_hr_list
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>gmh_leave_hr_list</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fix_HR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fix_HR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nor_HR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nor_HR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Base)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Base)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mod_Base)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mod_Base)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Break_Init)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Break_Init)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Break_End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Break_End)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.corp_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

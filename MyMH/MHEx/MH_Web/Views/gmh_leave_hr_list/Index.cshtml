@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MH_Repository.Models.gmh_leave_hr_list>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fix_HR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nor_HR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mod_Base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Break_Init)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Break_End)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fix_HR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nor_HR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mod_Base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Break_Init)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Break_End)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.corp_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.corp_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.corp_id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,1799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CTCI_MH_DBModelStoreContainer" CdmEntityContainer="CTCI_MH_DBEntities">
+    <EntitySetMapping Name="corp_SP_list">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.corp_SP_list">
+        <MappingFragment StoreEntitySet="corp_SP_list">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="sp_type" ColumnName="sp_type" />
+          <ScalarProperty Name="sp_name" ColumnName="sp_name" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_hr_list">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_hr_list">
+        <MappingFragment StoreEntitySet="gmh_leave_hr_list">
+          <ScalarProperty Name="Fix_HR" ColumnName="Fix_HR" />
+          <ScalarProperty Name="Nor_HR" ColumnName="Nor_HR" />
+          <ScalarProperty Name="Base" ColumnName="Base" />
+          <ScalarProperty Name="Mod_Base" ColumnName="Mod_Base" />
+          <ScalarProperty Name="Break_Init" ColumnName="Break_Init" />
+          <ScalarProperty Name="Break_End" ColumnName="Break_End" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_z_code_list">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_z_code_list">
+        <MappingFragment StoreEntitySet="gmh_z_code_list">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="code_type" ColumnName="code_type" />
+          <ScalarProperty Name="code_id" ColumnName="code_id" />
+          <ScalarProperty Name="code_desc" ColumnName="code_desc" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_zz_code_type">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_zz_code_type">
+        <MappingFragment StoreEntitySet="gmh_zz_code_type">
+          <ScalarProperty Name="code_type" ColumnName="code_type" />
+          <ScalarProperty Name="type_desc" ColumnName="type_desc" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="corp_visible" ColumnName="corp_visible" />
+          <ScalarProperty Name="user_maintainable" ColumnName="user_maintainable" />
+          <ScalarProperty Name="in_code_list" ColumnName="in_code_list" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="module_id" ColumnName="module_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calendar">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.calendar">
+        <MappingFragment StoreEntitySet="calendar">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="week_start" ColumnName="week_start" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="date0" ColumnName="date0" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="date4" ColumnName="date4" />
+          <ScalarProperty Name="date5" ColumnName="date5" />
+          <ScalarProperty Name="date6" ColumnName="date6" />
+          <ScalarProperty Name="WKflag0" ColumnName="WKflag0" />
+          <ScalarProperty Name="WKflag1" ColumnName="WKflag1" />
+          <ScalarProperty Name="WKflag2" ColumnName="WKflag2" />
+          <ScalarProperty Name="WKflag3" ColumnName="WKflag3" />
+          <ScalarProperty Name="WKflag4" ColumnName="WKflag4" />
+          <ScalarProperty Name="WKflag5" ColumnName="WKflag5" />
+          <ScalarProperty Name="WKflag6" ColumnName="WKflag6" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calendar_list">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.calendar_list">
+        <MappingFragment StoreEntitySet="calendar_list">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="calendar_desc" ColumnName="calendar_desc" />
+          <ScalarProperty Name="calendar_desc_e" ColumnName="calendar_desc_e" />
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="country_desc" ColumnName="country_desc" />
+          <ScalarProperty Name="oversea_day" ColumnName="oversea_day" />
+          <ScalarProperty Name="is_default" ColumnName="is_default" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="corp_leave_permit">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.corp_leave_permit">
+        <MappingFragment StoreEntitySet="corp_leave_permit">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="vacation_permit_nxt" ColumnName="vacation_permit_nxt" />
+          <ScalarProperty Name="vacation_permit_cur" ColumnName="vacation_permit_cur" />
+          <ScalarProperty Name="vacation_permit_lst" ColumnName="vacation_permit_lst" />
+          <ScalarProperty Name="vacation_permit_b_lst" ColumnName="vacation_permit_b_lst" />
+          <ScalarProperty Name="mod_by" ColumnName="mod_by" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="auto_flag" ColumnName="auto_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_apply_leave">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_apply_leave">
+        <MappingFragment StoreEntitySet="gmh_apply_leave">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="leave_code" ColumnName="leave_code" />
+          <ScalarProperty Name="beg_date" ColumnName="beg_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="apply_year" ColumnName="apply_year" />
+          <ScalarProperty Name="apply_mh" ColumnName="apply_mh" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="confirm_flag" ColumnName="confirm_flag" />
+          <ScalarProperty Name="confirm_by" ColumnName="confirm_by" />
+          <ScalarProperty Name="confirm_date" ColumnName="confirm_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_approver_special">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_approver_special">
+        <MappingFragment StoreEntitySet="gmh_approver_special">
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_auto_gen_mh_special">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_auto_gen_mh_special">
+        <MappingFragment StoreEntitySet="gmh_auto_gen_mh_special">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="need_keyin" ColumnName="need_keyin" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_checker">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_checker">
+        <MappingFragment StoreEntitySet="gmh_checker">
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="checker_id" ColumnName="checker_id" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+          <ScalarProperty Name="work_site" ColumnName="work_site" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_checker_log">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_checker_log">
+        <MappingFragment StoreEntitySet="gmh_checker_log">
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="checker_id" ColumnName="checker_id" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+          <ScalarProperty Name="work_site" ColumnName="work_site" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="delete_date" ColumnName="delete_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_chk_unit_prj">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_chk_unit_prj">
+        <MappingFragment StoreEntitySet="gmh_chk_unit_prj">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_corp_tab">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_corp_tab">
+        <MappingFragment StoreEntitySet="gmh_corp_tab">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_enabled_flag" ColumnName="mh_enabled_flag" />
+          <ScalarProperty Name="mh_enabled_yyyymm" ColumnName="mh_enabled_yyyymm" />
+          <ScalarProperty Name="mh_sign_level" ColumnName="mh_sign_level" />
+          <ScalarProperty Name="mh_Decimal_point" ColumnName="mh_Decimal_point" />
+          <ScalarProperty Name="leave_enabled_flag" ColumnName="leave_enabled_flag" />
+          <ScalarProperty Name="leave_enabled_yyyymm" ColumnName="leave_enabled_yyyymm" />
+          <ScalarProperty Name="leave_sign_level" ColumnName="leave_sign_level" />
+          <ScalarProperty Name="Leave_Decimal_point" ColumnName="Leave_Decimal_point" />
+          <ScalarProperty Name="OT_enabled_flag" ColumnName="OT_enabled_flag" />
+          <ScalarProperty Name="OT_enabled_yyyymm" ColumnName="OT_enabled_yyyymm" />
+          <ScalarProperty Name="OT_sign_level" ColumnName="OT_sign_level" />
+          <ScalarProperty Name="OT_Decimal_point" ColumnName="OT_Decimal_point" />
+          <ScalarProperty Name="OT_Option_flag" ColumnName="OT_Option_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_data">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_data">
+        <MappingFragment StoreEntitySet="gmh_data">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="sys_no" ColumnName="sys_no" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="recycle_wk" ColumnName="recycle_wk" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mho0" ColumnName="mho0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mho1" ColumnName="mho1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mho2" ColumnName="mho2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mho3" ColumnName="mho3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mho4" ColumnName="mho4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mho5" ColumnName="mho5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="mho6" ColumnName="mho6" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="mho_tot" ColumnName="mho_tot" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="sign_sw" ColumnName="sign_sw" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="cost_date" ColumnName="cost_date" />
+          <ScalarProperty Name="salary_date" ColumnName="salary_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="mod_by" ColumnName="mod_by" />
+          <ScalarProperty Name="mod_by_corp" ColumnName="mod_by_corp" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="org_phase" ColumnName="org_phase" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+          <ScalarProperty Name="employee_status0" ColumnName="employee_status0" />
+          <ScalarProperty Name="employee_status1" ColumnName="employee_status1" />
+          <ScalarProperty Name="employee_status2" ColumnName="employee_status2" />
+          <ScalarProperty Name="employee_status3" ColumnName="employee_status3" />
+          <ScalarProperty Name="employee_status4" ColumnName="employee_status4" />
+          <ScalarProperty Name="employee_status5" ColumnName="employee_status5" />
+          <ScalarProperty Name="employee_status6" ColumnName="employee_status6" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_data_pre">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_data_pre">
+        <MappingFragment StoreEntitySet="gmh_data_pre">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="sys_no" ColumnName="sys_no" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="recycle_wk" ColumnName="recycle_wk" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mho0" ColumnName="mho0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mho1" ColumnName="mho1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mho2" ColumnName="mho2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mho3" ColumnName="mho3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mho4" ColumnName="mho4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mho5" ColumnName="mho5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="mho6" ColumnName="mho6" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="mho_tot" ColumnName="mho_tot" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="sign_sw" ColumnName="sign_sw" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="cost_date" ColumnName="cost_date" />
+          <ScalarProperty Name="salary_date" ColumnName="salary_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="mod_by" ColumnName="mod_by" />
+          <ScalarProperty Name="mod_by_corp" ColumnName="mod_by_corp" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="org_phase" ColumnName="org_phase" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+          <ScalarProperty Name="employee_status0" ColumnName="employee_status0" />
+          <ScalarProperty Name="employee_status1" ColumnName="employee_status1" />
+          <ScalarProperty Name="employee_status2" ColumnName="employee_status2" />
+          <ScalarProperty Name="employee_status3" ColumnName="employee_status3" />
+          <ScalarProperty Name="employee_status4" ColumnName="employee_status4" />
+          <ScalarProperty Name="employee_status5" ColumnName="employee_status5" />
+          <ScalarProperty Name="employee_status6" ColumnName="employee_status6" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_data_reject">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_data_reject">
+        <MappingFragment StoreEntitySet="gmh_data_reject">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="sys_no" ColumnName="sys_no" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="recycle_wk" ColumnName="recycle_wk" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mho0" ColumnName="mho0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mho1" ColumnName="mho1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mho2" ColumnName="mho2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mho3" ColumnName="mho3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mho4" ColumnName="mho4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mho5" ColumnName="mho5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="mho6" ColumnName="mho6" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="mho_tot" ColumnName="mho_tot" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="sign_sw" ColumnName="sign_sw" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="cost_date" ColumnName="cost_date" />
+          <ScalarProperty Name="salary_date" ColumnName="salary_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="mod_by" ColumnName="mod_by" />
+          <ScalarProperty Name="mod_by_corp" ColumnName="mod_by_corp" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="org_phase" ColumnName="org_phase" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+          <ScalarProperty Name="employee_status0" ColumnName="employee_status0" />
+          <ScalarProperty Name="employee_status1" ColumnName="employee_status1" />
+          <ScalarProperty Name="employee_status2" ColumnName="employee_status2" />
+          <ScalarProperty Name="employee_status3" ColumnName="employee_status3" />
+          <ScalarProperty Name="employee_status4" ColumnName="employee_status4" />
+          <ScalarProperty Name="employee_status5" ColumnName="employee_status5" />
+          <ScalarProperty Name="employee_status6" ColumnName="employee_status6" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="reject_by" ColumnName="reject_by" />
+          <ScalarProperty Name="reject_by_corp" ColumnName="reject_by_corp" />
+          <ScalarProperty Name="reject_reason" ColumnName="reject_reason" />
+          <ScalarProperty Name="reject_date" ColumnName="reject_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_data_tmp_leave">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_data_tmp_leave">
+        <MappingFragment StoreEntitySet="gmh_data_tmp_leave">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_data1">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_data1">
+        <MappingFragment StoreEntitySet="gmh_data1">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="sys_no" ColumnName="sys_no" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="recycle_wk" ColumnName="recycle_wk" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="mho_tot" ColumnName="mho_tot" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="sign_sw" ColumnName="sign_sw" />
+          <ScalarProperty Name="cost_date" ColumnName="cost_date" />
+          <ScalarProperty Name="salary_date" ColumnName="salary_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="mod_by" ColumnName="mod_by" />
+          <ScalarProperty Name="mod_by_corp" ColumnName="mod_by_corp" />
+          <ScalarProperty Name="cost_yyyymm" ColumnName="cost_yyyymm" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_deputy_detail">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_deputy_detail">
+        <MappingFragment StoreEntitySet="gmh_deputy_detail">
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_deputy_item_list">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_deputy_item_list">
+        <MappingFragment StoreEntitySet="gmh_deputy_item_list">
+          <ScalarProperty Name="functionID" ColumnName="functionID" />
+          <ScalarProperty Name="function_Desc" ColumnName="function_Desc" />
+          <ScalarProperty Name="detail_flag" ColumnName="detail_flag" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="FUNCID" ColumnName="FUNCID" />
+          <ScalarProperty Name="Sort_Key" ColumnName="Sort_Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_deputy_master">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_deputy_master">
+        <MappingFragment StoreEntitySet="gmh_deputy_master">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="deputy_id" ColumnName="deputy_id" />
+          <ScalarProperty Name="functionID" ColumnName="functionID" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_for_mp">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_for_mp">
+        <MappingFragment StoreEntitySet="gmh_for_mp">
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="emp_type" ColumnName="emp_type" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="r1" ColumnName="r1" />
+          <ScalarProperty Name="o1" ColumnName="o1" />
+          <ScalarProperty Name="r2" ColumnName="r2" />
+          <ScalarProperty Name="o2" ColumnName="o2" />
+          <ScalarProperty Name="r3" ColumnName="r3" />
+          <ScalarProperty Name="o3" ColumnName="o3" />
+          <ScalarProperty Name="r4" ColumnName="r4" />
+          <ScalarProperty Name="o4" ColumnName="o4" />
+          <ScalarProperty Name="r5" ColumnName="r5" />
+          <ScalarProperty Name="o5" ColumnName="o5" />
+          <ScalarProperty Name="r6" ColumnName="r6" />
+          <ScalarProperty Name="o6" ColumnName="o6" />
+          <ScalarProperty Name="r7" ColumnName="r7" />
+          <ScalarProperty Name="o7" ColumnName="o7" />
+          <ScalarProperty Name="r8" ColumnName="r8" />
+          <ScalarProperty Name="o8" ColumnName="o8" />
+          <ScalarProperty Name="r9" ColumnName="r9" />
+          <ScalarProperty Name="o9" ColumnName="o9" />
+          <ScalarProperty Name="leave_tot" ColumnName="leave_tot" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_for_salary">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_for_salary">
+        <MappingFragment StoreEntitySet="gmh_for_salary">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_type" ColumnName="mh_type" />
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="data_yyyymm" ColumnName="data_yyyymm" />
+          <ScalarProperty Name="resign_status" ColumnName="resign_status" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="mh_date" ColumnName="mh_date" />
+          <ScalarProperty Name="leave_code" ColumnName="leave_code" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="ot_100" ColumnName="ot_100" />
+          <ScalarProperty Name="ot_133" ColumnName="ot_133" />
+          <ScalarProperty Name="ot_166" ColumnName="ot_166" />
+          <ScalarProperty Name="ot_200" ColumnName="ot_200" />
+          <ScalarProperty Name="tax_100" ColumnName="tax_100" />
+          <ScalarProperty Name="tax_133" ColumnName="tax_133" />
+          <ScalarProperty Name="tax_166" ColumnName="tax_166" />
+          <ScalarProperty Name="tax_200" ColumnName="tax_200" />
+          <ScalarProperty Name="d_tax_100" ColumnName="d_tax_100" />
+          <ScalarProperty Name="d_tax_133" ColumnName="d_tax_133" />
+          <ScalarProperty Name="d_tax_166" ColumnName="d_tax_166" />
+          <ScalarProperty Name="d_tax_200" ColumnName="d_tax_200" />
+          <ScalarProperty Name="m_tax_100" ColumnName="m_tax_100" />
+          <ScalarProperty Name="m_tax_133" ColumnName="m_tax_133" />
+          <ScalarProperty Name="m_tax_166" ColumnName="m_tax_166" />
+          <ScalarProperty Name="m_tax_200" ColumnName="m_tax_200" />
+          <ScalarProperty Name="g_ot_permit" ColumnName="g_ot_permit" />
+          <ScalarProperty Name="g_ot_100" ColumnName="g_ot_100" />
+          <ScalarProperty Name="g_ot_133" ColumnName="g_ot_133" />
+          <ScalarProperty Name="g_ot_166" ColumnName="g_ot_166" />
+          <ScalarProperty Name="g_ot_200" ColumnName="g_ot_200" />
+          <ScalarProperty Name="g_tax_100" ColumnName="g_tax_100" />
+          <ScalarProperty Name="g_tax_133" ColumnName="g_tax_133" />
+          <ScalarProperty Name="g_tax_166" ColumnName="g_tax_166" />
+          <ScalarProperty Name="g_tax_200" ColumnName="g_tax_200" />
+          <ScalarProperty Name="tax_sw" ColumnName="tax_sw" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="regular_mh" ColumnName="regular_mh" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_for_salary_oversea">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_for_salary_oversea">
+        <MappingFragment StoreEntitySet="gmh_for_salary_oversea">
+          <ScalarProperty Name="mh_type" ColumnName="mh_type" />
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="data_yyyymm" ColumnName="data_yyyymm" />
+          <ScalarProperty Name="resign_status" ColumnName="resign_status" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="mh_date" ColumnName="mh_date" />
+          <ScalarProperty Name="leave_code" ColumnName="leave_code" />
+          <ScalarProperty Name="mh_leave" ColumnName="mh_leave" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_for_salary1">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_for_salary1">
+        <MappingFragment StoreEntitySet="gmh_for_salary1">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_type" ColumnName="mh_type" />
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="data_yyyymm" ColumnName="data_yyyymm" />
+          <ScalarProperty Name="resign_status" ColumnName="resign_status" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="mh_date" ColumnName="mh_date" />
+          <ScalarProperty Name="leave_code" ColumnName="leave_code" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="ot_100" ColumnName="ot_100" />
+          <ScalarProperty Name="ot_133" ColumnName="ot_133" />
+          <ScalarProperty Name="ot_166" ColumnName="ot_166" />
+          <ScalarProperty Name="tax_100" ColumnName="tax_100" />
+          <ScalarProperty Name="tax_133" ColumnName="tax_133" />
+          <ScalarProperty Name="tax_166" ColumnName="tax_166" />
+          <ScalarProperty Name="d_tax_100" ColumnName="d_tax_100" />
+          <ScalarProperty Name="d_tax_133" ColumnName="d_tax_133" />
+          <ScalarProperty Name="d_tax_166" ColumnName="d_tax_166" />
+          <ScalarProperty Name="m_tax_100" ColumnName="m_tax_100" />
+          <ScalarProperty Name="m_tax_133" ColumnName="m_tax_133" />
+          <ScalarProperty Name="m_tax_166" ColumnName="m_tax_166" />
+          <ScalarProperty Name="tax_sw" ColumnName="tax_sw" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="regular_mh" ColumnName="regular_mh" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_holiday">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_holiday">
+        <MappingFragment StoreEntitySet="gmh_holiday">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="mh_date" ColumnName="mh_date" />
+          <ScalarProperty Name="holiday_desc" ColumnName="holiday_desc" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_keyin_flab">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_keyin_flab">
+        <MappingFragment StoreEntitySet="gmh_keyin_flab">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="work_site" ColumnName="work_site" />
+          <ScalarProperty Name="prj_no_str" ColumnName="prj_no_str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_form">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_form">
+        <MappingFragment StoreEntitySet="gmh_leave_form">
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="leave_code" ColumnName="leave_code" />
+          <ScalarProperty Name="beg_date" ColumnName="beg_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="total_hr" ColumnName="total_hr" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="deputy" ColumnName="deputy" />
+          <ScalarProperty Name="deputy_corp" ColumnName="deputy_corp" />
+          <ScalarProperty Name="deputy_flag" ColumnName="deputy_flag" />
+          <ScalarProperty Name="deputy_reject" ColumnName="deputy_reject" />
+          <ScalarProperty Name="deputy_date" ColumnName="deputy_date" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="reject" ColumnName="reject" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="file_url" ColumnName="file_url" />
+          <ScalarProperty Name="is_vip" ColumnName="is_vip" />
+          <ScalarProperty Name="revoke_desc" ColumnName="revoke_desc" />
+          <ScalarProperty Name="revoke_date" ColumnName="revoke_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_form_detail">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_form_detail">
+        <MappingFragment StoreEntitySet="gmh_leave_form_detail">
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="normal_hr" ColumnName="normal_hr" />
+          <ScalarProperty Name="leave_date" ColumnName="leave_date" />
+          <ScalarProperty Name="leave_wk" ColumnName="leave_wk" />
+          <ScalarProperty Name="leave_hr" ColumnName="leave_hr" />
+          <ScalarProperty Name="leave_time" ColumnName="leave_time" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_storage">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_storage">
+        <MappingFragment StoreEntitySet="gmh_leave_storage">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="data_year" ColumnName="data_year" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="mho" ColumnName="mho" />
+          <ScalarProperty Name="permit_ot" ColumnName="permit_ot" />
+          <ScalarProperty Name="leave_storage" ColumnName="leave_storage" />
+          <ScalarProperty Name="leave_used" ColumnName="leave_used" />
+          <ScalarProperty Name="leave_left" ColumnName="leave_left" />
+          <ScalarProperty Name="schedule_date" ColumnName="schedule_date" />
+          <ScalarProperty Name="old_employee_id" ColumnName="old_employee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_storage_053">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_storage_053">
+        <MappingFragment StoreEntitySet="gmh_leave_storage_053">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="leave_storage" ColumnName="leave_storage" />
+          <ScalarProperty Name="leave_used" ColumnName="leave_used" />
+          <ScalarProperty Name="leave_left" ColumnName="leave_left" />
+          <ScalarProperty Name="schedule_date" ColumnName="schedule_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_storage_resign_013">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_storage_resign_013">
+        <MappingFragment StoreEntitySet="gmh_leave_storage_resign_013">
+          <ScalarProperty Name="salary_yyyymm" ColumnName="salary_yyyymm" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="resign_date" ColumnName="resign_date" />
+          <ScalarProperty Name="leave_storage" ColumnName="leave_storage" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_storage_year_summary_013">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_storage_year_summary_013">
+        <MappingFragment StoreEntitySet="gmh_leave_storage_year_summary_013">
+          <ScalarProperty Name="data_year" ColumnName="data_year" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="keep_year" ColumnName="keep_year" />
+          <ScalarProperty Name="leave_keep" ColumnName="leave_keep" />
+          <ScalarProperty Name="schedule_date" ColumnName="schedule_date" />
+          <ScalarProperty Name="old_employee_id" ColumnName="old_employee_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_used_record_013_9933002">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_used_record_013_9933002">
+        <MappingFragment StoreEntitySet="gmh_leave_used_record_013_9933002">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="record_id" ColumnName="record_id" />
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="leave_hr" ColumnName="leave_hr" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_leave_used_record_053">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_leave_used_record_053">
+        <MappingFragment StoreEntitySet="gmh_leave_used_record_053">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="record_id" ColumnName="record_id" />
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="leave_hr" ColumnName="leave_hr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_message_for_003_left">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_message_for_003_left">
+        <MappingFragment StoreEntitySet="gmh_message_for_003_left">
+          <ScalarProperty Name="mm" ColumnName="mm" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="enter_date" ColumnName="enter_date" />
+          <ScalarProperty Name="leave_permit" ColumnName="leave_permit" />
+          <ScalarProperty Name="leave_used" ColumnName="leave_used" />
+          <ScalarProperty Name="exec_date" ColumnName="exec_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_ot_over_46_permit">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_ot_over_46_permit">
+        <MappingFragment StoreEntitySet="gmh_ot_over_46_permit">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="beg_yyyymm" ColumnName="beg_yyyymm" />
+          <ScalarProperty Name="end_yyyymm" ColumnName="end_yyyymm" />
+          <ScalarProperty Name="limit_ot" ColumnName="limit_ot" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_overtime_form">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_overtime_form">
+        <MappingFragment StoreEntitySet="gmh_overtime_form">
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="beg_date" ColumnName="beg_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_overtime_form_detail">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_overtime_form_detail">
+        <MappingFragment StoreEntitySet="gmh_overtime_form_detail">
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="normal_hr" ColumnName="normal_hr" />
+          <ScalarProperty Name="overtime_date" ColumnName="overtime_date" />
+          <ScalarProperty Name="overtime_hr" ColumnName="overtime_hr" />
+          <ScalarProperty Name="overtime_time" ColumnName="overtime_time" />
+          <ScalarProperty Name="overtime_week" ColumnName="overtime_week" />
+          <ScalarProperty Name="overtime_option" ColumnName="overtime_option" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="reject" ColumnName="reject" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_pm_in_site">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_pm_in_site">
+        <MappingFragment StoreEntitySet="gmh_pm_in_site">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="prj_key" ColumnName="prj_key" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_resign_lock">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_resign_lock">
+        <MappingFragment StoreEntitySet="gmh_resign_lock">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="resign_date" ColumnName="resign_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gmh_RN_prj_checker">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.gmh_RN_prj_checker">
+        <MappingFragment StoreEntitySet="gmh_RN_prj_checker">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="checker_id" ColumnName="checker_id" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_date" ColumnName="keyin_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_emp_OT_flag">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.HR_emp_OT_flag">
+        <MappingFragment StoreEntitySet="HR_emp_OT_flag">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="OT_flag" ColumnName="OT_flag" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="message">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.message">
+        <MappingFragment StoreEntitySet="message">
+          <ScalarProperty Name="rowid" ColumnName="rowid" />
+          <ScalarProperty Name="ntaccount" ColumnName="ntaccount" />
+          <ScalarProperty Name="messagedesc" ColumnName="messagedesc" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="priorityid" ColumnName="priorityid" />
+          <ScalarProperty Name="indate" ColumnName="indate" />
+          <ScalarProperty Name="duedate" ColumnName="duedate" />
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="subcate" ColumnName="subcate" />
+          <ScalarProperty Name="recid" ColumnName="recid" />
+          <ScalarProperty Name="oriaccount" ColumnName="oriaccount" />
+          <ScalarProperty Name="oriname" ColumnName="oriname" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="subcate_desc" ColumnName="subcate_desc" />
+          <ScalarProperty Name="parameter" ColumnName="parameter" />
+          <ScalarProperty Name="internet_flag" ColumnName="internet_flag" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="month_frozen">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.month_frozen">
+        <MappingFragment StoreEntitySet="month_frozen">
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_date" ColumnName="cost_date" />
+          <ScalarProperty Name="frozen_date" ColumnName="frozen_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oversea_leave_confirm">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.oversea_leave_confirm">
+        <MappingFragment StoreEntitySet="oversea_leave_confirm">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="permit" ColumnName="permit" />
+          <ScalarProperty Name="used" ColumnName="used" />
+          <ScalarProperty Name="leave_left" ColumnName="leave_left" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="sal_yyyymm" ColumnName="sal_yyyymm" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="note" ColumnName="note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oversea_leave_to_bonus_record">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.oversea_leave_to_bonus_record">
+        <MappingFragment StoreEntitySet="oversea_leave_to_bonus_record">
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="trans_date" ColumnName="trans_date" />
+          <ScalarProperty Name="oversea_date" ColumnName="oversea_date" />
+          <ScalarProperty Name="return_date" ColumnName="return_date" />
+          <ScalarProperty Name="trans_edit_date" ColumnName="trans_edit_date" />
+          <ScalarProperty Name="oversea_edit_date" ColumnName="oversea_edit_date" />
+          <ScalarProperty Name="return_edit_date" ColumnName="return_edit_date" />
+          <ScalarProperty Name="salary_flag" ColumnName="salary_flag" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="overtime_permit_special">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.overtime_permit_special">
+        <MappingFragment StoreEntitySet="overtime_permit_special">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="OT_permit" ColumnName="OT_permit" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prj_type_list">
+      <EntityTypeMapping TypeName="CTCI_MH_DBModel.prj_type_list">
+        <MappingFragment StoreEntitySet="prj_type_list">
+          <ScalarProperty Name="prj_type" ColumnName="prj_type" />
+          <ScalarProperty Name="prj_type_desc" ColumnName="prj_type_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="s_cal_leave_storage_for_resign_013" FunctionName="CTCI_MH_DBModel.Store.s_cal_leave_storage_for_resign_013" />
+    <FunctionImportMapping FunctionImportName="s_cal_leave_storage_year_summary_013" FunctionName="CTCI_MH_DBModel.Store.s_cal_leave_storage_year_summary_013" />
+    <FunctionImportMapping FunctionImportName="s_corp_leave_permit" FunctionName="CTCI_MH_DBModel.Store.s_corp_leave_permit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_corp_leave_permit_Result">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="enter_date" ColumnName="enter_date" />
+          <ScalarProperty Name="vacation_permit_cur" ColumnName="vacation_permit_cur" />
+          <ScalarProperty Name="vacation_permit_lst" ColumnName="vacation_permit_lst" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_corp_leave_permit_special" FunctionName="CTCI_MH_DBModel.Store.s_corp_leave_permit_special">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_corp_leave_permit_special_Result">
+          <ScalarProperty Name="ret_flag" ColumnName="ret_flag" />
+          <ScalarProperty Name="ret_message" ColumnName="ret_message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_accrecord_weekend_list" FunctionName="CTCI_MH_DBModel.Store.s_gmh_accrecord_weekend_list">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_accrecord_weekend_list_Result">
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="default_flg" ColumnName="default_flg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_apply_leave" FunctionName="CTCI_MH_DBModel.Store.s_gmh_apply_leave">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_apply_leave_Result">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="mh_group_desc" ColumnName="mh_group_desc" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="work_site" ColumnName="work_site" />
+          <ScalarProperty Name="position_code" ColumnName="position_code" />
+          <ScalarProperty Name="qual_code" ColumnName="qual_code" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="resign_date" ColumnName="resign_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_auto_gen_mh" FunctionName="CTCI_MH_DBModel.Store.s_gmh_auto_gen_mh" />
+    <FunctionImportMapping FunctionImportName="s_gmh_auto_gen_mh_list" FunctionName="CTCI_MH_DBModel.Store.s_gmh_auto_gen_mh_list" />
+    <FunctionImportMapping FunctionImportName="s_gmh_auto_gen_mh_query" FunctionName="CTCI_MH_DBModel.Store.s_gmh_auto_gen_mh_query" />
+    <FunctionImportMapping FunctionImportName="s_gmh_businesstrip_and_leave_status_query_tw" FunctionName="CTCI_MH_DBModel.Store.s_gmh_businesstrip_and_leave_status_query_tw" />
+    <FunctionImportMapping FunctionImportName="s_gmh_businesstrip_and_leave_status_select" FunctionName="CTCI_MH_DBModel.Store.s_gmh_businesstrip_and_leave_status_select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_businesstrip_and_leave_status_select_Result">
+          <ScalarProperty Name="week_start" ColumnName="week_start" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="period_desc" ColumnName="period_desc" />
+          <ScalarProperty Name="default_week_end" ColumnName="default_week_end" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_cal_leave_storage" FunctionName="CTCI_MH_DBModel.Store.s_gmh_cal_leave_storage" />
+    <FunctionImportMapping FunctionImportName="s_gmh_cal_leave_storage_053" FunctionName="CTCI_MH_DBModel.Store.s_gmh_cal_leave_storage_053" />
+    <FunctionImportMapping FunctionImportName="s_gmh_cal_leave_storage_resign" FunctionName="CTCI_MH_DBModel.Store.s_gmh_cal_leave_storage_resign" />
+    <FunctionImportMapping FunctionImportName="s_gmh_cal_leave_storage_resign_053" FunctionName="CTCI_MH_DBModel.Store.s_gmh_cal_leave_storage_resign_053" />
+    <FunctionImportMapping FunctionImportName="s_gmh_cal_oversea_leave" FunctionName="CTCI_MH_DBModel.Store.s_gmh_cal_oversea_leave" />
+    <FunctionImportMapping FunctionImportName="s_gmh_cal_oversea_leave_byyear" FunctionName="CTCI_MH_DBModel.Store.s_gmh_cal_oversea_leave_byyear" />
+    <FunctionImportMapping FunctionImportName="s_gmh_calendar" FunctionName="CTCI_MH_DBModel.Store.s_gmh_calendar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_calendar_Result">
+          <ScalarProperty Name="yyyy" ColumnName="yyyy" />
+          <ScalarProperty Name="default_yyyy" ColumnName="default_yyyy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_calendar_oversea" FunctionName="CTCI_MH_DBModel.Store.s_gmh_calendar_oversea">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_calendar_oversea_Result">
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="country_desc" ColumnName="country_desc" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="calendar_desc" ColumnName="calendar_desc" />
+          <ScalarProperty Name="oversea_day" ColumnName="oversea_day" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_check_deputy_Auth" FunctionName="CTCI_MH_DBModel.Store.s_gmh_check_deputy_Auth" />
+    <FunctionImportMapping FunctionImportName="s_gmh_chk_budget" FunctionName="CTCI_MH_DBModel.Store.s_gmh_chk_budget">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_chk_budget_Result">
+          <ScalarProperty Name="is_over" ColumnName="is_over" />
+          <ScalarProperty Name="prj_type" ColumnName="prj_type" />
+          <ScalarProperty Name="messagestr" ColumnName="messagestr" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_chk_prj" FunctionName="CTCI_MH_DBModel.Store.s_gmh_chk_prj">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_chk_prj_Result">
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="prj_name_cs" ColumnName="prj_name_cs" />
+          <ScalarProperty Name="prj_type" ColumnName="prj_type" />
+          <ScalarProperty Name="new_prj_type" ColumnName="new_prj_type" />
+          <ScalarProperty Name="need_cost_code" ColumnName="need_cost_code" />
+          <ScalarProperty Name="is_LNG_prj" ColumnName="is_LNG_prj" />
+          <ScalarProperty Name="messagestr" ColumnName="messagestr" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_corp_tab" FunctionName="CTCI_MH_DBModel.Store.s_gmh_corp_tab">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_corp_tab_Result">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_enabled_flag" ColumnName="mh_enabled_flag" />
+          <ScalarProperty Name="mh_enabled_yyyymm" ColumnName="mh_enabled_yyyymm" />
+          <ScalarProperty Name="mh_sign_level" ColumnName="mh_sign_level" />
+          <ScalarProperty Name="mh_Decimal_point" ColumnName="mh_Decimal_point" />
+          <ScalarProperty Name="leave_enabled_flag" ColumnName="leave_enabled_flag" />
+          <ScalarProperty Name="leave_enabled_yyyymm" ColumnName="leave_enabled_yyyymm" />
+          <ScalarProperty Name="leave_sign_level" ColumnName="leave_sign_level" />
+          <ScalarProperty Name="leave_Decimal_point" ColumnName="leave_Decimal_point" />
+          <ScalarProperty Name="OT_enabled_flag" ColumnName="OT_enabled_flag" />
+          <ScalarProperty Name="OT_enabled_yyyymm" ColumnName="OT_enabled_yyyymm" />
+          <ScalarProperty Name="OT_sign_level" ColumnName="OT_sign_level" />
+          <ScalarProperty Name="OT_Decimal_point" ColumnName="OT_Decimal_point" />
+          <ScalarProperty Name="OT_Option_flag" ColumnName="OT_Option_flag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_create_calendar" FunctionName="CTCI_MH_DBModel.Store.s_gmh_create_calendar" />
+    <FunctionImportMapping FunctionImportName="s_gmh_data_query_for_staff" FunctionName="CTCI_MH_DBModel.Store.s_gmh_data_query_for_staff">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_data_query_for_staff_Result">
+          <ScalarProperty Name="beg_yyyymm" ColumnName="beg_yyyymm" />
+          <ScalarProperty Name="end_yyyymm" ColumnName="end_yyyymm" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_data_query_mgr_select" FunctionName="CTCI_MH_DBModel.Store.s_gmh_data_query_mgr_select" />
+    <FunctionImportMapping FunctionImportName="s_gmh_data_reject" FunctionName="CTCI_MH_DBModel.Store.s_gmh_data_reject">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_data_reject_Result">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="sys_no" ColumnName="sys_no" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="recycle_wk" ColumnName="recycle_wk" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mho0" ColumnName="mho0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mho1" ColumnName="mho1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mho2" ColumnName="mho2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mho3" ColumnName="mho3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mho4" ColumnName="mho4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mho5" ColumnName="mho5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="mho6" ColumnName="mho6" />
+          <ScalarProperty Name="mhn_tot" ColumnName="mhn_tot" />
+          <ScalarProperty Name="mho_tot" ColumnName="mho_tot" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="keyin_by" ColumnName="keyin_by" />
+          <ScalarProperty Name="keyin_by_corp" ColumnName="keyin_by_corp" />
+          <ScalarProperty Name="sign_sw" ColumnName="sign_sw" />
+          <ScalarProperty Name="check_by" ColumnName="check_by" />
+          <ScalarProperty Name="check_by_corp" ColumnName="check_by_corp" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_by_corp" ColumnName="approve_by_corp" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="cost_date" ColumnName="cost_date" />
+          <ScalarProperty Name="salary_date" ColumnName="salary_date" />
+          <ScalarProperty Name="mod_date" ColumnName="mod_date" />
+          <ScalarProperty Name="mod_by" ColumnName="mod_by" />
+          <ScalarProperty Name="mod_by_corp" ColumnName="mod_by_corp" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="org_phase" ColumnName="org_phase" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_corp" ColumnName="checker_corp" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_corp" ColumnName="approver_corp" />
+          <ScalarProperty Name="employee_status0" ColumnName="employee_status0" />
+          <ScalarProperty Name="employee_status1" ColumnName="employee_status1" />
+          <ScalarProperty Name="employee_status2" ColumnName="employee_status2" />
+          <ScalarProperty Name="employee_status3" ColumnName="employee_status3" />
+          <ScalarProperty Name="employee_status4" ColumnName="employee_status4" />
+          <ScalarProperty Name="employee_status5" ColumnName="employee_status5" />
+          <ScalarProperty Name="employee_status6" ColumnName="employee_status6" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="reject_by" ColumnName="reject_by" />
+          <ScalarProperty Name="reject_by_corp" ColumnName="reject_by_corp" />
+          <ScalarProperty Name="reject_reason" ColumnName="reject_reason" />
+          <ScalarProperty Name="reject_date" ColumnName="reject_date" />
+          <ScalarProperty Name="reject_name" ColumnName="reject_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_data_reject_message_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_data_reject_message_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_deputy_detail" FunctionName="CTCI_MH_DBModel.Store.s_gmh_deputy_detail" />
+    <FunctionImportMapping FunctionImportName="s_gmh_deputy_master" FunctionName="CTCI_MH_DBModel.Store.s_gmh_deputy_master">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_deputy_master_Result">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="set_flag" ColumnName="set_flag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_emp_access_record_9933" FunctionName="CTCI_MH_DBModel.Store.s_gmh_emp_access_record_9933" />
+    <FunctionImportMapping FunctionImportName="s_gmh_export_check_period" FunctionName="CTCI_MH_DBModel.Store.s_gmh_export_check_period" />
+    <FunctionImportMapping FunctionImportName="s_gmh_export_exec_query_D" FunctionName="CTCI_MH_DBModel.Store.s_gmh_export_exec_query_D" />
+    <FunctionImportMapping FunctionImportName="s_gmh_export_exec_query_P" FunctionName="CTCI_MH_DBModel.Store.s_gmh_export_exec_query_P" />
+    <FunctionImportMapping FunctionImportName="s_gmh_export_get_department" FunctionName="CTCI_MH_DBModel.Store.s_gmh_export_get_department" />
+    <FunctionImportMapping FunctionImportName="s_gmh_export_get_project" FunctionName="CTCI_MH_DBModel.Store.s_gmh_export_get_project" />
+    <FunctionImportMapping FunctionImportName="s_gmh_flow_appmgr" FunctionName="CTCI_MH_DBModel.Store.s_gmh_flow_appmgr" />
+    <FunctionImportMapping FunctionImportName="s_gmh_flow_leavebonus" FunctionName="CTCI_MH_DBModel.Store.s_gmh_flow_leavebonus" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_account_SAP" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_account_SAP" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_mp" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_mp" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_qemp" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_qemp" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_qemp_test" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_qemp_test" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary_frozen" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary_frozen" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary_oversea" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary_oversea" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary1" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary1" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary2" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary2" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary3" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary3" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary4" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary4" />
+    <FunctionImportMapping FunctionImportName="s_gmh_for_salary4_old" FunctionName="CTCI_MH_DBModel.Store.s_gmh_for_salary4_old" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_003_list" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_003_list">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_003_list_Result">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="enter_date" ColumnName="enter_date" />
+          <ScalarProperty Name="leave_permit" ColumnName="leave_permit" />
+          <ScalarProperty Name="leave_used" ColumnName="leave_used" />
+          <ScalarProperty Name="leave_left" ColumnName="leave_left" />
+          <ScalarProperty Name="exec_date" ColumnName="exec_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_Calendar_Desc" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_Calendar_Desc" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_carddaily" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_carddaily" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_checker_and_approver" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_checker_and_approver" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_checker_and_approver_9933" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_checker_and_approver_9933" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_cost_code" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_cost_code">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_cost_code_Result">
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="cost_code_desc" ColumnName="cost_code_desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_Costcenter" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_Costcenter" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_dept_emp" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_dept_emp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_dept_emp_Result">
+          <ScalarProperty Name="belong_center" ColumnName="belong_center" />
+          <ScalarProperty Name="belong_center_desc" ColumnName="belong_center_desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_deupty_emp_list" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_deupty_emp_list">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_deupty_emp_list_Result">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_deupty_func" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_deupty_func">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_deupty_func_Result">
+          <ScalarProperty Name="functionID" ColumnName="functionID" />
+          <ScalarProperty Name="function_Desc" ColumnName="function_Desc" />
+          <ScalarProperty Name="detail_flag" ColumnName="detail_flag" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="FUNCID" ColumnName="FUNCID" />
+          <ScalarProperty Name="Sort_Key" ColumnName="Sort_Key" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_deupty_info" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_deupty_info">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_deupty_info_Result">
+          <ScalarProperty Name="deputy_type" ColumnName="deputy_type" />
+          <ScalarProperty Name="deputy_list" ColumnName="deputy_list" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_deupty_type" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_deupty_type">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_deupty_type_Result">
+          <ScalarProperty Name="sel_type" ColumnName="sel_type" />
+          <ScalarProperty Name="detail_flag" ColumnName="detail_flag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_discipline_code" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_discipline_code">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_discipline_code_Result">
+          <ScalarProperty Name="discipline_code" ColumnName="discipline_code" />
+          <ScalarProperty Name="discipline_desc" ColumnName="discipline_desc" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="sort_key" ColumnName="sort_key" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leave_code" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leave_code" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leave_detail_data" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leave_detail_data">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_leave_detail_data_Result">
+          <ScalarProperty Name="leave_date" ColumnName="leave_date" />
+          <ScalarProperty Name="leave_wk" ColumnName="leave_wk" />
+          <ScalarProperty Name="leave_time" ColumnName="leave_time" />
+          <ScalarProperty Name="leave_hr" ColumnName="leave_hr" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leave_form_data" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leave_form_data">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_leave_form_data_Result">
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="application_id" ColumnName="application_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="applicant" ColumnName="applicant" />
+          <ScalarProperty Name="applicant_ext" ColumnName="applicant_ext" />
+          <ScalarProperty Name="leave_code" ColumnName="leave_code" />
+          <ScalarProperty Name="code_desc" ColumnName="code_desc" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="total_hr" ColumnName="total_hr" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="deputy" ColumnName="deputy" />
+          <ScalarProperty Name="deputy_name" ColumnName="deputy_name" />
+          <ScalarProperty Name="deputy_status" ColumnName="deputy_status" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_name" ColumnName="checker_name" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_name" ColumnName="approver_name" />
+          <ScalarProperty Name="deputy_reject_reason" ColumnName="deputy_reject_reason" />
+          <ScalarProperty Name="reject_reason" ColumnName="reject_reason" />
+          <ScalarProperty Name="revoke_reason" ColumnName="revoke_reason" />
+          <ScalarProperty Name="status_code" ColumnName="status_code" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leave_storage_mon" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leave_storage_mon" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leave_storage_mon_053" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leave_storage_mon_053" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leave_storage_mon_9933002" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leave_storage_mon_9933002" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_leavehr_range" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_leavehr_range" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_location" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_location" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_mh_form_data" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_mh_form_data">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_mh_form_data_Result">
+          <ScalarProperty Name="mh_id" ColumnName="mh_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="prj_name_cs" ColumnName="prj_name_cs" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="phase_desc" ColumnName="phase_desc" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="discipline_desc" ColumnName="discipline_desc" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="cost_code_desc" ColumnName="cost_code_desc" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="unit_area" ColumnName="unit_area" />
+          <ScalarProperty Name="sys_no" ColumnName="sys_no" />
+          <ScalarProperty Name="equip_no" ColumnName="equip_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="recycle_wk" ColumnName="recycle_wk" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_name" ColumnName="checker_name" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_name" ColumnName="approver_name" />
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mho0" ColumnName="mho0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mho1" ColumnName="mho1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mho2" ColumnName="mho2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mho3" ColumnName="mho3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mho4" ColumnName="mho4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mho5" ColumnName="mho5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="mho6" ColumnName="mho6" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="reject_by" ColumnName="reject_by" />
+          <ScalarProperty Name="reject_name" ColumnName="reject_name" />
+          <ScalarProperty Name="reject_reason" ColumnName="reject_reason" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_overtime_limit" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_overtime_limit" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_phase" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_phase">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_get_phase_Result">
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="phase_desc" ColumnName="phase_desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_get_sales_data" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_sales_data" />
+    <FunctionImportMapping FunctionImportName="s_gmh_get_SP" FunctionName="CTCI_MH_DBModel.Store.s_gmh_get_SP" />
+    <FunctionImportMapping FunctionImportName="s_gmh_holiday" FunctionName="CTCI_MH_DBModel.Store.s_gmh_holiday">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_holiday_Result">
+          <ScalarProperty Name="ret_flag" ColumnName="ret_flag" />
+          <ScalarProperty Name="ret_message" ColumnName="ret_message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_keyin_flab" FunctionName="CTCI_MH_DBModel.Store.s_gmh_keyin_flab">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_keyin_flab_Result">
+          <ScalarProperty Name="work_site" ColumnName="work_site" />
+          <ScalarProperty Name="prj_name_cs" ColumnName="prj_name_cs" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_keyin_ratio" FunctionName="CTCI_MH_DBModel.Store.s_gmh_keyin_ratio" />
+    <FunctionImportMapping FunctionImportName="s_gmh_last_month" FunctionName="CTCI_MH_DBModel.Store.s_gmh_last_month" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_apply_date_MIEI" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_apply_date_MIEI" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_apply_date_tw" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_apply_date_tw" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_CA_select" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_CA_select" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_checker" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_checker" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_checker_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_checker_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_deputy" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_deputy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_leave_deputy_Result">
+          <ScalarProperty Name="belong_center" ColumnName="belong_center" />
+          <ScalarProperty Name="belong_center_desc" ColumnName="belong_center_desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_deupty_sign" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_deupty_sign" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_deupty_sign_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_deupty_sign_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_form_detail_insert" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_form_detail_insert" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_form_insert" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_form_insert" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_get_select" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_get_select" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_info_MIEI" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_info_MIEI" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_info_tw" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_info_tw" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_message_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_message_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_query" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_query" />
+    <FunctionImportMapping FunctionImportName="s_gmh_leave_to_gmh_data" FunctionName="CTCI_MH_DBModel.Store.s_gmh_leave_to_gmh_data" />
+    <FunctionImportMapping FunctionImportName="s_gmh_load_mh_data" FunctionName="CTCI_MH_DBModel.Store.s_gmh_load_mh_data" />
+    <FunctionImportMapping FunctionImportName="s_gmh_maintain_calendar" FunctionName="CTCI_MH_DBModel.Store.s_gmh_maintain_calendar" />
+    <FunctionImportMapping FunctionImportName="s_gmh_message_for_003_left" FunctionName="CTCI_MH_DBModel.Store.s_gmh_message_for_003_left" />
+    <FunctionImportMapping FunctionImportName="s_gmh_message_for_approve" FunctionName="CTCI_MH_DBModel.Store.s_gmh_message_for_approve" />
+    <FunctionImportMapping FunctionImportName="s_gmh_message_for_input" FunctionName="CTCI_MH_DBModel.Store.s_gmh_message_for_input" />
+    <FunctionImportMapping FunctionImportName="s_gmh_message_for_secretary" FunctionName="CTCI_MH_DBModel.Store.s_gmh_message_for_secretary" />
+    <FunctionImportMapping FunctionImportName="s_gmh_message_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_message_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_CA_select" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_CA_select" />
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_checker" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_checker" />
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_checker_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_checker_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_chk_input" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_chk_input">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_mh_chk_input_Result">
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="messagestr" ColumnName="messagestr" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_data_input_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_data_input_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_overtime_permit" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_overtime_permit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_mh_overtime_permit_Result">
+          <ScalarProperty Name="day_permit" ColumnName="day_permit" />
+          <ScalarProperty Name="month_permit" ColumnName="month_permit" />
+          <ScalarProperty Name="OT_input" ColumnName="OT_input" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_mh_weekend_list" FunctionName="CTCI_MH_DBModel.Store.s_gmh_mh_weekend_list" />
+    <FunctionImportMapping FunctionImportName="s_gmh_month" FunctionName="CTCI_MH_DBModel.Store.s_gmh_month">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_month_Result">
+          <ScalarProperty Name="data_month" ColumnName="data_month" />
+          <ScalarProperty Name="default_month" ColumnName="default_month" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_month_delay" FunctionName="CTCI_MH_DBModel.Store.s_gmh_month_delay" />
+    <FunctionImportMapping FunctionImportName="s_gmh_month_list" FunctionName="CTCI_MH_DBModel.Store.s_gmh_month_list" />
+    <FunctionImportMapping FunctionImportName="s_gmh_month_list_worksite" FunctionName="CTCI_MH_DBModel.Store.s_gmh_month_list_worksite" />
+    <FunctionImportMapping FunctionImportName="s_gmh_month_overleave" FunctionName="CTCI_MH_DBModel.Store.s_gmh_month_overleave" />
+    <FunctionImportMapping FunctionImportName="s_gmh_oversea_leave_confirm_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_oversea_leave_confirm_process">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_oversea_leave_confirm_process_Result">
+          <ScalarProperty Name="ret" ColumnName="ret" />
+          <ScalarProperty Name="msgdesc" ColumnName="msgdesc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_oversea_leave_get_day" FunctionName="CTCI_MH_DBModel.Store.s_gmh_oversea_leave_get_day">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_oversea_leave_get_day_Result">
+          <ScalarProperty Name="working_day" ColumnName="working_day" />
+          <ScalarProperty Name="holiday" ColumnName="holiday" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_oversea_leave_to_bonus_record" FunctionName="CTCI_MH_DBModel.Store.s_gmh_oversea_leave_to_bonus_record" />
+    <FunctionImportMapping FunctionImportName="s_gmh_oversea_leave_to_bonus_record_insert" FunctionName="CTCI_MH_DBModel.Store.s_gmh_oversea_leave_to_bonus_record_insert">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_oversea_leave_to_bonus_record_insert_Result">
+          <ScalarProperty Name="return_flag" ColumnName="return_flag" />
+          <ScalarProperty Name="return_string" ColumnName="return_string" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_CA_select" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_CA_select" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_calendar" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_calendar" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_checker" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_checker" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_checker_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_checker_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_detail" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_detail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_overtime_detail_Result">
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="emp_name_c" ColumnName="emp_name_c" />
+          <ScalarProperty Name="emp_ext_no" ColumnName="emp_ext_no" />
+          <ScalarProperty Name="prj_no" ColumnName="prj_no" />
+          <ScalarProperty Name="cost_code" ColumnName="cost_code" />
+          <ScalarProperty Name="code_desc" ColumnName="code_desc" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="discipline" ColumnName="discipline" />
+          <ScalarProperty Name="calendar_id" ColumnName="calendar_id" />
+          <ScalarProperty Name="overtime_date" ColumnName="overtime_date" />
+          <ScalarProperty Name="overtime_week" ColumnName="overtime_week" />
+          <ScalarProperty Name="overtime_week_desc" ColumnName="overtime_week_desc" />
+          <ScalarProperty Name="Apply_date" ColumnName="Apply_date" />
+          <ScalarProperty Name="overtime_time" ColumnName="overtime_time" />
+          <ScalarProperty Name="overtime_hr" ColumnName="overtime_hr" />
+          <ScalarProperty Name="normal_hr" ColumnName="normal_hr" />
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="checker" ColumnName="checker" />
+          <ScalarProperty Name="checker_c" ColumnName="checker_c" />
+          <ScalarProperty Name="checker_ext_no" ColumnName="checker_ext_no" />
+          <ScalarProperty Name="approver" ColumnName="approver" />
+          <ScalarProperty Name="approver_c" ColumnName="approver_c" />
+          <ScalarProperty Name="approver_ext_no" ColumnName="approver_ext_no" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="status_desc" ColumnName="status_desc" />
+          <ScalarProperty Name="reject" ColumnName="reject" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_form_detail_insert" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_form_detail_insert" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_form_insert" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_form_insert" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_message_process" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_message_process" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_period" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_period" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_permission" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_permission" />
+    <FunctionImportMapping FunctionImportName="s_gmh_overtime_query" FunctionName="CTCI_MH_DBModel.Store.s_gmh_overtime_query" />
+    <FunctionImportMapping FunctionImportName="s_gmh_per_565" FunctionName="CTCI_MH_DBModel.Store.s_gmh_per_565" />
+    <FunctionImportMapping FunctionImportName="s_gmh_query_003" FunctionName="CTCI_MH_DBModel.Store.s_gmh_query_003" />
+    <FunctionImportMapping FunctionImportName="s_gmh_query_003_cur" FunctionName="CTCI_MH_DBModel.Store.s_gmh_query_003_cur" />
+    <FunctionImportMapping FunctionImportName="s_gmh_query_033" FunctionName="CTCI_MH_DBModel.Store.s_gmh_query_033" />
+    <FunctionImportMapping FunctionImportName="s_gmh_query_leave_used" FunctionName="CTCI_MH_DBModel.Store.s_gmh_query_leave_used" />
+    <FunctionImportMapping FunctionImportName="s_gmh_query_leave_used_MIEI" FunctionName="CTCI_MH_DBModel.Store.s_gmh_query_leave_used_MIEI" />
+    <FunctionImportMapping FunctionImportName="s_gmh_reghr_check" FunctionName="CTCI_MH_DBModel.Store.s_gmh_reghr_check">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_reghr_check_Result">
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="date0" ColumnName="date0" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="date4" ColumnName="date4" />
+          <ScalarProperty Name="date5" ColumnName="date5" />
+          <ScalarProperty Name="date6" ColumnName="date6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_reghr_check_X_" FunctionName="CTCI_MH_DBModel.Store.s_gmh_reghr_check_X_">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_reghr_check_X__Result">
+          <ScalarProperty Name="mhn0" ColumnName="mhn0" />
+          <ScalarProperty Name="mhn1" ColumnName="mhn1" />
+          <ScalarProperty Name="mhn2" ColumnName="mhn2" />
+          <ScalarProperty Name="mhn3" ColumnName="mhn3" />
+          <ScalarProperty Name="mhn4" ColumnName="mhn4" />
+          <ScalarProperty Name="mhn5" ColumnName="mhn5" />
+          <ScalarProperty Name="mhn6" ColumnName="mhn6" />
+          <ScalarProperty Name="date0" ColumnName="date0" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="date4" ColumnName="date4" />
+          <ScalarProperty Name="date5" ColumnName="date5" />
+          <ScalarProperty Name="date6" ColumnName="date6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_resign_lock" FunctionName="CTCI_MH_DBModel.Store.s_gmh_resign_lock">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_resign_lock_Result">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="resign_date" ColumnName="resign_date" />
+          <ScalarProperty Name="data_id" ColumnName="data_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_setup_checker_query" FunctionName="CTCI_MH_DBModel.Store.s_gmh_setup_checker_query">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_setup_checker_query_Result">
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="mh_group_desc" ColumnName="mh_group_desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_unapprove_query" FunctionName="CTCI_MH_DBModel.Store.s_gmh_unapprove_query" />
+    <FunctionImportMapping FunctionImportName="s_gmh_upd_mh_data_employed_status" FunctionName="CTCI_MH_DBModel.Store.s_gmh_upd_mh_data_employed_status" />
+    <FunctionImportMapping FunctionImportName="s_gmh_verify_emp" FunctionName="CTCI_MH_DBModel.Store.s_gmh_verify_emp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_verify_emp_Result">
+          <ScalarProperty Name="corp_id" ColumnName="corp_id" />
+          <ScalarProperty Name="mh_group" ColumnName="mh_group" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="enter_date" ColumnName="enter_date" />
+          <ScalarProperty Name="resign_date" ColumnName="resign_date" />
+          <ScalarProperty Name="cost_center" ColumnName="cost_center" />
+          <ScalarProperty Name="belong_center" ColumnName="belong_center" />
+          <ScalarProperty Name="employed_status" ColumnName="employed_status" />
+          <ScalarProperty Name="employee_status_desc" ColumnName="employee_status_desc" />
+          <ScalarProperty Name="position_code" ColumnName="position_code" />
+          <ScalarProperty Name="qual_code" ColumnName="qual_code" />
+          <ScalarProperty Name="cost_center_desc" ColumnName="cost_center_desc" />
+          <ScalarProperty Name="belong_center_desc" ColumnName="belong_center_desc" />
+          <ScalarProperty Name="mh_group_desc" ColumnName="mh_group_desc" />
+          <ScalarProperty Name="work_site" ColumnName="work_site" />
+          <ScalarProperty Name="formal_enter" ColumnName="formal_enter" />
+          <ScalarProperty Name="on_resign" ColumnName="on_resign" />
+          <ScalarProperty Name="is_flab" ColumnName="is_flab" />
+          <ScalarProperty Name="resign_lock" ColumnName="resign_lock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_gmh_weekly_mh_status" FunctionName="CTCI_MH_DBModel.Store.s_gmh_weekly_mh_status">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_gmh_weekly_mh_status_Result">
+          <ScalarProperty Name="week_end" ColumnName="week_end" />
+          <ScalarProperty Name="week_end_desc" ColumnName="week_end_desc" />
+          <ScalarProperty Name="default_week_end" ColumnName="default_week_end" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_month_frozen" FunctionName="CTCI_MH_DBModel.Store.s_month_frozen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_month_frozen_Result">
+          <ScalarProperty Name="mh_yyyymm" ColumnName="mh_yyyymm" />
+          <ScalarProperty Name="frozen_flag" ColumnName="frozen_flag" />
+          <ScalarProperty Name="frozen_date" ColumnName="frozen_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_oversea_leave_to_bonus_record_insert" FunctionName="CTCI_MH_DBModel.Store.s_oversea_leave_to_bonus_record_insert">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.s_oversea_leave_to_bonus_record_insert_Result">
+          <ScalarProperty Name="return_flag" ColumnName="return_flag" />
+          <ScalarProperty Name="return_string" ColumnName="return_string" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="s_project_org_by_emp" FunctionName="CTCI_MH_DBModel.Store.s_project_org_by_emp" />
+    <FunctionImportMapping FunctionImportName="s_update_corp_leave_permit_tw" FunctionName="CTCI_MH_DBModel.Store.s_update_corp_leave_permit_tw" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="CTCI_MH_DBModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="CTCI_MH_DBModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="CTCI_MH_DBModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="CTCI_MH_DBModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="CTCI_MH_DBModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CTCI_MH_DBModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="CTCI_MH_DBModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="CTCI_MH_DBModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>
