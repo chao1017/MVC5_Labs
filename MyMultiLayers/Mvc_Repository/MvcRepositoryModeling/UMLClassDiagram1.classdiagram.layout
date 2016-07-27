@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.625" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="a112ee66-77ed-42cb-87b6-f0277dcf5c02" />
+  <nestedChildShapes>
+    <classShape Id="4f81b472-b1da-45fe-86cd-ae342fc1f10b" absoluteBounds="2.875, 7.875, 1.875, 2.6292418247461313" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="085f4acf-e390-49ed-8809-6836dccf228d" LastKnownName="CategoryController" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="96954611-af07-4765-9596-52cd98ca523c" absoluteBounds="2.89, 8.390335639317831, 1.8450000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="8ea7e459-a7a6-4ce3-bcc8-111bfd214aba" absoluteBounds="2.89, 8.7616637519001959, 1.8450000000000002, 1.6425780728459356" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d9101d0-1196-48a8-b289-50db32467232" absoluteBounds="6.625, 8.125, 2.125, 3.2698668048779176" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="d15b24a0-46fb-4074-b1d9-1caadb2f2672" LastKnownName="ProductsController" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0675e073-a948-49d5-a70e-8445809055d5" absoluteBounds="6.64, 8.640335639317831, 2.0949999999999998, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0ba50b12-7182-4b4f-a720-47df6a7e2361" absoluteBounds="6.64, 9.331976241966089, 2.0949999999999998, 1.9628905629118283" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <packageShape Id="7d9a88e9-2ccd-4123-9d05-3c9e882f927b" absoluteBounds="0.5, 2, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="252f7562-5057-4ab2-aafb-105b83eb7346" LastKnownName="Repository" />
+    </packageShape>
+    <packageShape Id="951eac7c-a6fc-45a9-83f8-12730e0f8031" absoluteBounds="0.5, 3.375, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="d1ab5da8-1e9e-4811-858d-8720bc14afce" LastKnownName="Mvc_Repository" />
+    </packageShape>
+    <packageShape Id="bf3a9768-0f12-43e7-9f2c-f9606e9e587a" absoluteBounds="0.5, 4.75, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="28357192-3107-4444-9a52-839f03dda626" LastKnownName="Controllers" />
+    </packageShape>
+    <packageShape Id="166b3d6f-8225-4d23-92b8-5774b189ce60" absoluteBounds="0.5, 6.125, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="22178370-a39f-4b7e-8df5-f0b7118f136b" LastKnownName="Models" />
+    </packageShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

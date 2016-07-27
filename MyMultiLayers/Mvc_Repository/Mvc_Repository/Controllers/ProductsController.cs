@@ -14,8 +14,8 @@ namespace Mvc_Repository.Controllers
 {
     public class ProductsController : Controller
     {
-        private IRepository<Products> productsRepository;
-        private IRepository<Categories> categoriesRepository;
+        private IProductRepository productsRepository;
+        private ICategoryRepository categoriesRepository;
 
         public IEnumerable<Categories> Categories
         {
@@ -27,92 +27,164 @@ namespace Mvc_Repository.Controllers
  
         public ProductsController()
         {
-            this.productsRepository = new GenericRepository<Products>();
-            this.categoriesRepository = new GenericRepository<Categories>();
+            this.productsRepository = new ProductRepository();
+            this.categoriesRepository = new CategoryRepository();
         }
  
-        public ActionResult Index()
+        public ActionResult Index(string category = "all")
         {
-            var products = productsRepository.GetAll().OrderByDescending(x => x.ProductID).ToList();
+            //var products = productsRepository.GetAll().OrderByDescending(x => x.ProductID).ToList();
+            //return View(products);
+
+            int categoryID = 1;
+
+            ViewBag.CategorySelectList = int.TryParse(category, out categoryID)
+                ? this.CategorySelectList(categoryID.ToString())
+                : this.CategorySelectList("all");
+
+            var result = category.Equals("all", StringComparison.OrdinalIgnoreCase)
+                ? productsRepository.GetAll()
+                : productsRepository.GetByCategory(categoryID);
+
+            var products = result.OrderByDescending(x => x.ProductID).ToList();
+
+            ViewBag.Category = category;
+
             return View(products);
+        }
+
+        [HttpPost]
+        public ActionResult ProductsOfCategory(string category)
+        {
+            return RedirectToAction("Index", new { category = category });
+        }
+
+        /// <summary>
+        /// CategorySelectList
+        /// </summary>
+        /// <param name="selectedValue">The selected value.</param>
+        /// <returns></returns>
+        public List<SelectListItem> CategorySelectList(string selectedValue = "all")
+        {
+            List<SelectListItem> items = new List<SelectListItem>();
+            items.Add(new SelectListItem()
+            {
+                Text = "All Category",
+                Value = "all",
+                Selected = selectedValue.Equals("all", StringComparison.OrdinalIgnoreCase)
+            });
+
+            var categories = categoriesRepository.GetAll().OrderBy(x => x.CategoryID);
+
+            foreach (var c in categories)
+            {
+                items.Add(new SelectListItem()
+                {
+                    Text = c.CategoryName,
+                    Value = c.CategoryID.ToString(),
+                    Selected = selectedValue.Equals(c.CategoryID.ToString())
+                });
+            }
+            return items;
         }
  
         //=========================================================================================
-        
-        public ActionResult Details(int id = 0)
+
+        public ActionResult Details(int? id, string category)
         {
-            Products product = productsRepository.Get(x => x.ProductID == id);
+            if (!id.HasValue) return RedirectToAction("index");
+
+            Products product = productsRepository.GetByID(id.Value);
             if (product == null)
             {
                 return HttpNotFound();
             }
+
+            ViewBag.Category = string.IsNullOrWhiteSpace(category) ? "all" : category;
+
             return View(product);
         }
  
         //=========================================================================================
- 
-        public ActionResult Create()
+
+        public ActionResult Create(string category)
         {
             ViewBag.CategoryID = new SelectList(this.Categories, "CategoryID", "CategoryName");
+            ViewBag.Category = string.IsNullOrWhiteSpace(category) ? "all" : category;
+
             return View();
         }
- 
+
         [HttpPost]
-        public ActionResult Create(Products products)
+        public ActionResult Create(Products products, string category)
         {
             if (ModelState.IsValid)
             {
                 this.productsRepository.Create(products);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new { category = category });
             }
-        
+
             ViewBag.CategoryID = new SelectList(this.Categories, "CategoryID", "CategoryName", products.CategoryID);
+
             return View(products);
         }
  
         //=========================================================================================
- 
-        public ActionResult Edit(int id = 0)
+
+        public ActionResult Edit(int? id, string category)
         {
-            Products product = this.productsRepository.Get(x => x.ProductID == id);
+            if (!id.HasValue) return RedirectToAction("index");
+
+            Products product = this.productsRepository.GetByID(id.Value);
             if (product == null)
             {
                 return HttpNotFound();
             }
+
             ViewBag.CategoryID = new SelectList(this.Categories, "CategoryID", "CategoryName", product.CategoryID);
+            ViewBag.Category = string.IsNullOrWhiteSpace(category) ? "all" : category;
+
             return View(product);
         }
- 
+
         [HttpPost]
-        public ActionResult Edit(Products products)
+        public ActionResult Edit(Products products, string category)
         {
             if (ModelState.IsValid)
             {
                 this.productsRepository.Update(products);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new { category = category });
             }
+
             ViewBag.CategoryID = new SelectList(this.Categories, "CategoryID", "CategoryName", products.CategoryID);
+
             return View(products);
         }
  
         //=========================================================================================
- 
-        public ActionResult Delete(int id = 0)
+
+        public ActionResult Delete(int? id, string category)
         {
-            Products product = this.productsRepository.Get(x => x.ProductID == id);
+            if (!id.HasValue) return RedirectToAction("index");
+
+            Products product = this.productsRepository.GetByID(id.Value);
             if (product == null)
             {
                 return HttpNotFound();
             }
+
+            ViewBag.Category = string.IsNullOrWhiteSpace(category) ? "all" : category;
+
             return View(product);
         }
- 
+
         [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(int id, string category)
         {
-            Products product = this.productsRepository.Get(x=>x.ProductID == id);
+            Products product = this.productsRepository.GetByID(id);
             this.productsRepository.Delete(product);
-            return RedirectToAction("Index");
+
+            return RedirectToAction("Index", new { category = category });
         }
     }
 }

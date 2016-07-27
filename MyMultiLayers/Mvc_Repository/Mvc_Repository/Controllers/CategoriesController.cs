@@ -13,11 +13,12 @@ namespace Mvc_Repository.Controllers
 {
     public class CategoryController : Controller
     {
-        private IRepository<Categories> categoriesRepository;
+        //private IRepository<Categories> categoriesRepository;
+        private ICategoryRepository categoriesRepository;
 
         public CategoryController()
         {
-            this.categoriesRepository = new GenericRepository<Categories>();
+            this.categoriesRepository = new CategoryRepository();
         }
 
 
