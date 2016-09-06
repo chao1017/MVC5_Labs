@@ -1,0 +1,9 @@
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\bin\Debug\Mvc_Repository.Service.dll
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\bin\Debug\Mvc_Repository.Service.pdb
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\bin\Debug\Mvc_Repository.Models.dll
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\bin\Debug\EntityFramework.dll
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\bin\Debug\Mvc_Repository.Models.pdb
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\bin\Debug\EntityFramework.xml
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\obj\Debug\Mvc_Repository.Service.csprojResolveAssemblyReference.cache
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\obj\Debug\Mvc_Repository.Service.dll
+D:\Dropbox\DotNet\MVC5\MVC_RepositoryNew\Mvc_Repository\Mvc_Repository.Service\obj\Debug\Mvc_Repository.Service.pdb
