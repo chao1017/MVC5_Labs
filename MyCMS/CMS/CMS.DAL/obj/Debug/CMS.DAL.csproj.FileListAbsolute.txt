@@ -1,0 +1,12 @@
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\CMS.DAL.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\CMS.DAL.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\CMS.Domain.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\EntityFramework.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\CMS.Domain.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\EntityFramework.xml
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\obj\Debug\CMS.DAL.csprojResolveAssemblyReference.cache
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\obj\Debug\CMS.DAL.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\obj\Debug\CMS.DAL.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
