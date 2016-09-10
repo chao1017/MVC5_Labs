@@ -1,0 +1,14 @@
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\CMS.BLL.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\CMS.BLL.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\AutoMapper.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\CMS.DAL.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\CMS.Domain.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\EntityFramework.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\CMS.DAL.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\CMS.Domain.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\AutoMapper.xml
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\EntityFramework.xml
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\obj\Debug\CMS.BLL.csprojResolveAssemblyReference.cache
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\obj\Debug\CMS.BLL.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.BLL\obj\Debug\CMS.BLL.pdb

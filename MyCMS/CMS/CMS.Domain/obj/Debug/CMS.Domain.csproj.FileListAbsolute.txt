@@ -9,3 +9,5 @@ D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Domain\bin\Debug\zh-Hant\EntityFramework.resou
 D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Domain\obj\Debug\CMS.Domain.csprojResolveAssemblyReference.cache
 D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Domain\obj\Debug\CMS.Domain.dll
 D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Domain\obj\Debug\CMS.Domain.pdb
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Domain\bin\Debug\AutoMapper.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Domain\bin\Debug\AutoMapper.xml
