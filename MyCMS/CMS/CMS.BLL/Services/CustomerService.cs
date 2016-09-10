@@ -66,18 +66,22 @@ namespace CMS.BLL.Services
             // 使用Linq篩選分頁
             var DbResult = db.Get().ToList().Skip((CurrPage - 1) * PageSize).Take(PageSize).ToList();
 
+            #region AutoMapper V4.2 以前的寫法
             // Mapping到ViewModel
             
-            //AutoMapper V4.2 以前的寫法
+            //
             //Mapper.CreateMap<Customers, CustomerViewModel>();
             //return Mapper.Map<List<Customers>, List<CustomerViewModel>>(DbResult).AsQueryable();
+            #endregion
 
+            #region 新版AutoMapper 寫法
             //AutoMapper V >= 4.2 的寫法
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Customers, CustomerViewModel>());
             config.AssertConfigurationIsValid();//驗證應對
 
             var mapper = config.CreateMapper();
             return mapper.Map<List<Customers>, List<CustomerViewModel>>(DbResult).AsQueryable();
+            #endregion
         }
     }
 }
