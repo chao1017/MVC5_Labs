@@ -58,6 +58,8 @@ namespace CMS.BLL.Services
             #endregion
         }
 
+        // <summary>取得所有客戶資料(分頁)</summary>
+        /// <returns></returns>
         public IQueryable<CustomerViewModel> Get(int CurrPage, int PageSize, out int TotalRow)
         {
             // 取得所有筆數
@@ -83,5 +85,37 @@ namespace CMS.BLL.Services
             return mapper.Map<List<Customers>, List<CustomerViewModel>>(DbResult).AsQueryable();
             #endregion
         }
+
+        /// <summary>
+        /// 取得客戶資訊
+        /// </summary>
+        /// <param name="CustomerID"></param>
+        /// <returns></returns>
+        public CustomerViewModel Get(string CustomerID)
+        {
+            var DbResult = db.Get().Where(c => c.CustomerID.Trim() == CustomerID.Trim()).FirstOrDefault();
+        
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Customers, CustomerViewModel>());
+            config.AssertConfigurationIsValid();//驗證應對
+            
+            var mapper = config.CreateMapper();
+            return mapper.Map<Customers, CustomerViewModel>(DbResult);
+        }
+
+        /// <summary>
+        /// 新增客戶資料
+        /// </summary>
+        /// <param name="models"></param>
+        public void AddCustomer(CustomerViewModel models)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Customers, CustomerViewModel>());
+            config.AssertConfigurationIsValid();//驗證應對
+
+            var mapper = config.CreateMapper();
+
+            var cust = mapper.Map<CustomerViewModel, Customers>(models);
+            db.Insert(cust);
+        }
+        
     }
 }
