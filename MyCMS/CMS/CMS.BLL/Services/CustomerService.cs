@@ -116,6 +116,31 @@ namespace CMS.BLL.Services
             var cust = mapper.Map<CustomerViewModel, Customers>(models);
             db.Insert(cust);
         }
+
+        /// <summary>
+        /// 儲存客戶資訊
+        /// </summary>
+        /// <param name="models"></param>
+        public void SaveCustomer(CustomerViewModel models)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Customers, CustomerViewModel>());
+            config.AssertConfigurationIsValid();//驗證應對
+
+            var mapper = config.CreateMapper();
+            var cust = mapper.Map<CustomerViewModel, Customers>(models);
+
+            db.Update(cust);
+        }
+
+        /// <summary>
+        /// 刪除客戶資訊
+        /// </summary>
+        /// <param name="CustomerID"></param>
+        public void Delete(string CustomerID)
+        {
+            var Customer = db.GetByID(CustomerID);
+            db.Delete(Customer);
+        }
         
     }
 }

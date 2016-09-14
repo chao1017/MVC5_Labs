@@ -74,21 +74,18 @@ namespace CMS.Web.API
             }
         }
         
-        // GET: api/Customer
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        // GET: api/Customer/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST: api/Customer
-        public void Post([FromBody]string value)
+        public HttpResponseMessage Post(CustomerViewModel models)
         {
+            try
+            {
+                service.AddCustomer(models);
+                return Request.CreateResponse(HttpStatusCode.OK);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message.ToString());
+            }
         }
 
         // PUT: api/Customer/5
