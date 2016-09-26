@@ -91,3 +91,7 @@ D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\CMS.BLL.pdb
 D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\CMS.Domain.pdb
 D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\CMS.DAL.pdb
 D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\AutoMapper.xml
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\GitHub\MVC5_Labs\MyCMS\CMS\CMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
